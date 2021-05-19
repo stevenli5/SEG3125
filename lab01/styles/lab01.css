@@ -12,11 +12,15 @@ img {
 footer {
     position: block;
     bottom: 0;
-    background-color: salmon;
+    background-color: #fa8072;
     grid-column: span 12;
     margin-top: 2rem;
     font-size: medium;
     text-align: center;
+}
+
+a:hover {
+    background-color: #fa8072;
 }
 
 /* Custom style classes */
@@ -42,6 +46,7 @@ footer {
 
 .header {
     grid-column: span 12;
+    background-color: #fa8072;
     padding-left: 1rem;
 }
 
@@ -64,7 +69,7 @@ footer {
     margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    border: 0.2rem solid salmon;
+    border: 0.2rem solid #fa8072;
     border-radius: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;

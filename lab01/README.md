@@ -1,1 +1,1 @@
-Disclaimer: This website has no affiliations to OC Transpo.
+Disclaimer: This website is not affiliated with OC Transpo.
