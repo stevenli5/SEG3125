@@ -16,7 +16,7 @@
 
     <!-- Divisions -->
     <div class="container">
-        <div class="header">
+        <div class="header" style="background-color:salmon;">
             <h1>OC Transpo Website Feedback</h1>
         </div>
 
@@ -34,7 +34,7 @@
 
         <div class="feedback-form">
             <h2 class="align-center">Feedback Form</h2>
-            <form class="align-center" id="questionnaire">
+            <form id="questionnaire">
                 <p class="text-bold">Personal Information</p>
                 <label for="fname" class="required">First Name</label>
                 <input type="text" id="firstName" name="firstName" class="required" required>
@@ -63,13 +63,13 @@
                 <br />
                 <input type="checkbox" id="feature6" name="feature6" value="Virtual Museum">
                 <label for="feature6">Virtual Museum</label>
-                <p>Please provide a reasoning if none are selected.</p>
-                <label for="feature-more">Reasoning/Additional Comments:</label>
+                <p>Please provide a reasoning if none are applicable.</p>
+                <label for="feature-more">Reasoning and Additional Comments:</label>
                 <br />
                 <textarea rows="3" cols="40"></textarea>
                 <br />
                 <p class="text-bold">How are you visiting the website?</p>
-                <label for="webbrowser" class="required">Web browser</label>
+                <label for="webbrowser" class="required">Web browser type</label>
                 <select id="favorite" required>
                     <option disabled selected value>Select one</option>
                     <option value="Google Chrome">Google Chrome</option>
@@ -85,7 +85,7 @@
                 <label class="text-bold required" for="rating">Overall Website Rating</label>
                 <br />
                 <input type="radio" id="1" name="rating" value="1" required>
-                <label for="1">1 &#128078;</label> &nbsp;&nbsp;&nbsp;
+                <label for="1">1 &#128078;</label> &nbsp;&nbsp;
                 <input type="radio" id="2" name="rating" value="2">
                 <label for="2">2</label> &nbsp;&nbsp;&nbsp;
                 <input type="radio" id="3" name="rating" value="3">
@@ -95,9 +95,9 @@
                 <input type="radio" id="5" name="rating" value="5">
                 <label for="5">5 &#128077;</label>
                 <br /> <br />
-                <label class="text-bold" for="additional-feedback">Additional Feedback or Suggestions</label>
+                <label class="text-bold" for="additional-feedback">Additional Feedback and Suggestions</label>
                 <br />
-                <textarea rows="5" cols="50"></textarea>
+                <textarea rows="5" cols="40"></textarea>
                 <br /> <br />
                 <input type="submit" value="Submit">
                 <p>For feedback on service, please use the <a href="https://www.octranspo.com/en/customer-feedback/" rel="external">Customer Feedback Form</a>.</p>

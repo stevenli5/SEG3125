@@ -42,7 +42,7 @@ footer {
 
 .header {
     grid-column: span 12;
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .content {
@@ -88,5 +88,8 @@ footer {
     }
     .feedback-form {
         grid-column: span 12;
+    }
+    input, label, select, textarea {
+        width: 100%;
     }
 }
