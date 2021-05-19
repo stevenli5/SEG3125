@@ -1,18 +1,30 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
-h1 {
-    font-size: 125%;
+h1, p {
+    margin-left: 1rem;
+}
+
+img {
+    width: 100%;
+    position: block;
 }
 
 footer {
-    background-color: pink;
-    margin-top: 1rem;
+    background-color: salmon;
+    grid-column: span 12;
+    bottom: 0;
+    margin-top: 2rem;
     font-size: medium;
     text-align: center;
-    bottom: 0;
-    grid-column: span 12;
+}
+
+/* Custom style classes */
+
+.align-center {
+    text-align: center;
 }
 
 .container {
@@ -32,13 +44,9 @@ footer {
 
 .display {
     grid-column: span 6;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-}
-
-img {
-    width: 100%;
-    position: block;
 }
 
 .feedback-form {
@@ -49,9 +57,11 @@ img {
     outline: 0.2rem solid black;
 }
 
-.feedback-form p {
+.feedback-form :is(h1, h2, h3, h4, h5, h6) {
     margin-left: 1rem;
 }
+
+/* Small device support */
 
 @media screen and (max-width: 1000px) {
     .display {
