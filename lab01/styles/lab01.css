@@ -14,19 +14,23 @@ img {
 }
 
 footer {
+    position: block;
+    bottom: 0;
     background-color: salmon;
     grid-column: span 12;
-    bottom: 0;
     margin-top: 2rem;
     font-size: medium;
     text-align: center;
-    position: block;
 }
 
 /* Custom style classes */
 
 .align-center {
     text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
 }
 
 /* Custom division classes */
@@ -47,18 +51,19 @@ footer {
 }
 
 .display {
-    grid-column: span 6;
+    grid-column: span 9;
     margin-top: 1rem;
     display: flex;
     align-items: center;
 }
 
 .feedback-form {
+    grid-column: span 3;
     margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    grid-column: span 6;
-    outline: 0.2rem solid black;
+    border: 0.2rem solid salmon;
+    border-radius: 1rem;
 }
 
 .feedback-form :is(h1, h2, h3, h4, h5, h6) {

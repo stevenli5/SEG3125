@@ -11,8 +11,9 @@ ul {
 }
 
 footer {
+    grid-column: span 12;
     font-size: medium;
-    position: absolute;
+    position: block;
     bottom: 0;
 }
 
@@ -48,13 +49,6 @@ footer {
         grid-column: span 12;
     }
     .main-content {
-        grid-column: span 12;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .navigation-menu {
-        grid-row: 1;
         grid-column: span 12;
     }
 }
