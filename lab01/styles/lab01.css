@@ -21,7 +21,7 @@ footer {
 }
 
 .content {
-    grid-column: span 6;
+    grid-column: span 12;
     display: flex;
     align-items: center;
 }
@@ -42,8 +42,19 @@ img {
 }
 
 .feedback-form {
+    margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     grid-column: span 6;
     outline: 0.2rem solid black;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .display {
+        grid-column: span 12;
+    }
+    .feedback-form {
+        grid-column: span 12;
+    }
 }
