@@ -94,7 +94,7 @@ a:hover {
     .feedback-form {
         grid-column: span 12;
     }
-    input, label, select, textarea {
-        width: 100%;
+    label, textarea {
+        width: 80%;
     }
 }
