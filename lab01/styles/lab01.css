@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 125%;
+}
+
+footer {
+    background-color: pink;
+    margin-top: 1rem;
+    font-size: medium;
+    text-align: center;
+    bottom: 0;
+    grid-column: span 12;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.content {
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    grid-column: span 12;
+}
+
+.display {
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    position: block;
+}
+
+.feedback-form {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    grid-column: span 6;
+    outline: 0.2rem solid black;
+}
