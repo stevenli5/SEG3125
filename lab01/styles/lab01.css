@@ -4,10 +4,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, p {
-    margin-left: 1rem;
-}
-
 img {
     width: 100%;
     position: block;
@@ -29,6 +25,10 @@ footer {
     text-align: center;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
 .text-italic {
     font-style: italic;
 }
@@ -42,32 +42,42 @@ footer {
 
 .header {
     grid-column: span 12;
+    margin-left: 1rem;
 }
 
 .content {
     grid-column: span 12;
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
 .display {
-    grid-column: span 9;
+    grid-column: span 8;
     margin-top: 1rem;
     display: flex;
     align-items: center;
 }
 
 .feedback-form {
-    grid-column: span 3;
+    grid-column: span 4;
     margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     border: 0.2rem solid salmon;
     border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 
 .feedback-form :is(h1, h2, h3, h4, h5, h6) {
     margin-left: 1rem;
+}
+
+.required:after {
+    content:" *";
+    color: red;
 }
 
 /* Small device support */

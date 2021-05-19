@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/lab01.css">
 </head>
+
 <body>
 
     <!-- Divisions -->
@@ -20,16 +22,86 @@
 
         <div class="content">
             <!-- Link to the website -->
-            <p>Thank you for your interest in providing feedback to the <a href="https://www.octranspo.com/en/" rel="external" title="OC Transpo website" target="_blank">OC Transpo website</a>!</p>
+            <p>Thank you for your interest in providing feedback to the <a href="https://www.octranspo.com/en/"
+                    rel="external" title="OC Transpo website" target="_blank">OC Transpo website</a>!</p>
         </div>
 
         <div class="display">
             <!-- Image of the website that also serves as a link -->
-            <a href="https://www.octranspo.com/en/" rel="external" target="_blank"><img src="images/OCTranspoHomepage.png" alt="OC Transpo homepage" title="OC Transpo homepage"></a>
+            <a href="https://www.octranspo.com/en/" rel="external" target="_blank"><img
+                    src="images/OCTranspoHomepage.png" alt="OC Transpo homepage" title="OC Transpo homepage"></a>
         </div>
 
         <div class="feedback-form">
             <h2 class="align-center">Feedback Form</h2>
+            <form class="align-center" id="questionnaire">
+                <p class="text-bold">Personal Information</p>
+                <label for="fname" class="required">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="required" required>
+                <br />
+                <label for="lname" class="required">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <br />
+                <label for="email">Email&nbsp;</label>
+                <input type="text" id="email" name="email">
+                <br />
+                <p><span class="text-bold">Which features do you like?</span> <br />Select all that apply.</p>
+                <input type="checkbox" id="feature1" name="feature1" value="Travel Planner">
+                <label for="feature1">Travel Planner</label>
+                <br />
+                <input type="checkbox" id="feature2" name="feature2" value="Service Updates">
+                <label for="feature2">Service Updates</label>
+                <br />
+                <input type="checkbox" id="feature3" name="feature3" value="Next Departures">
+                <label for="feature3">Next Departures</label>
+                <br />
+                <input type="checkbox" id="feature4" name="feature4" value="Schedules & Map">
+                <label for="feature4">Schedules & Map</label>
+                <br />
+                <input type="checkbox" id="feature5" name="feature5" value="Featured Destinations">
+                <label for="feature5">Featured Destinations</label>
+                <br />
+                <input type="checkbox" id="feature6" name="feature6" value="Virtual Museum">
+                <label for="feature6">Virtual Museum</label>
+                <p>Please provide a reasoning if none are selected.</p>
+                <label for="feature-more">Reasoning/Additional Comments:</label>
+                <br />
+                <textarea rows="3" cols="40"></textarea>
+                <br />
+                <p class="text-bold">How are you visiting the website?</p>
+                <label for="webbrowser" class="required">Web browser</label>
+                <select id="favorite" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="Google Chrome">Google Chrome</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br />
+                <label for="webbrowser">If other, please specify&nbsp;</label>
+                <input type="text" id="webbrowser" name="webbrowser">
+                <br /> <br />
+                <label class="text-bold required" for="rating">Overall Website Rating</label>
+                <br />
+                <input type="radio" id="1" name="rating" value="1" required>
+                <label for="1">1 &#128078;</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="2" name="rating" value="2">
+                <label for="2">2</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="3" name="rating" value="3">
+                <label for="3">3</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="4" name="rating" value="4">
+                <label for="4">4</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="5" name="rating" value="5">
+                <label for="5">5 &#128077;</label>
+                <br /> <br />
+                <label class="text-bold" for="additional-feedback">Additional Feedback or Suggestions</label>
+                <br />
+                <textarea rows="5" cols="50"></textarea>
+                <br /> <br />
+                <input type="submit" value="Submit">
+                <p>For feedback on service, please use the <a href="https://www.octranspo.com/en/customer-feedback/" rel="external">Customer Feedback Form</a>.</p>
+            </form>
         </div>
 
         <!-- Footer with signature -->
@@ -40,4 +112,5 @@
     </div>
 
 </body>
+
 </html>
