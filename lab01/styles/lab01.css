@@ -1,6 +1,7 @@
+/* Default CSS for regular tags */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
 }
 
 h1, p {
@@ -19,6 +20,7 @@ footer {
     margin-top: 2rem;
     font-size: medium;
     text-align: center;
+    position: block;
 }
 
 /* Custom style classes */
@@ -27,19 +29,21 @@ footer {
     text-align: center;
 }
 
+/* Custom division classes */
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    grid-column: span 12;
 }
 
 .content {
     grid-column: span 12;
     display: flex;
     align-items: center;
-}
-
-.header {
-    grid-column: span 12;
 }
 
 .display {
