@@ -28,13 +28,17 @@
 
         <div class="display">
             <!-- Image of the website that also serves as a link -->
-            <a href="https://www.octranspo.com/en/" rel="external" title="Visit the OC Transpo website" target="_blank"><img
-                    src="images/OCTranspoHomepage.png" alt="OC Transpo homepage"></a>
+            <a href="https://www.octranspo.com/en/" rel="external" title="Visit the OC Transpo website"
+                target="_blank"><img src="images/OCTranspoHomepage.png" alt="OC Transpo homepage"></a>
         </div>
 
         <div class="feedback-form">
             <h2 class="align-center">Feedback Form</h2>
-            <form id="questionnaire">
+
+            <!-- Form -->
+            <form id="form">
+
+                <!-- Text type question -->
                 <p class="text-bold">Personal Information</p>
                 <label for="fname" class="required">First Name</label>
                 <input type="text" id="firstName" name="firstName" class="required" required>
@@ -45,6 +49,8 @@
                 <label for="email">Email&nbsp;</label>
                 <input type="text" id="email" name="email">
                 <br />
+
+                <!-- Multi-selection type question -->
                 <p><span class="text-bold">Which features do you like?</span> <br />Select all that apply.</p>
                 <input type="checkbox" id="feature1" name="feature1" value="Travel Planner">
                 <label for="feature1">Travel Planner</label>
@@ -66,11 +72,13 @@
                 <p>Please provide a reasoning if none are applicable.</p>
                 <label for="feature-more">Reasoning and Additional Comments:</label>
                 <br />
-                <textarea rows="3" cols="40"></textarea>
+                <textarea rows="3" cols="50"></textarea>
                 <br />
+
+                <!-- Single selection list type question -->
                 <p class="text-bold">How are you visiting the website?</p>
                 <label for="webbrowser" class="required">Web browser type</label>
-                <select id="favorite" required>
+                <select id="webbrowser" required>
                     <option disabled selected value>Select one</option>
                     <option value="Google Chrome">Google Chrome</option>
                     <option value="Microsoft Edge">Microsoft Edge</option>
@@ -82,26 +90,35 @@
                 <label for="webbrowser">If other, please specify&nbsp;</label>
                 <input type="text" id="webbrowser" name="webbrowser">
                 <br /> <br />
+
+                <!-- Radio button type question -->
                 <label class="text-bold required" for="rating">Overall Website Rating</label>
                 <br />
-                <input type="radio" id="1" name="rating" value="1" required>
+                <input type="radio" id="rate1" name="rating" value="1" required>
                 <label for="1">1 &#128078;</label> &nbsp;&nbsp;
-                <input type="radio" id="2" name="rating" value="2">
-                <label for="2">2</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" id="3" name="rating" value="3">
-                <label for="3">3</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" id="4" name="rating" value="4">
-                <label for="4">4</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" id="5" name="rating" value="5">
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="2">2</label> &nbsp;&nbsp;
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="3">3</label> &nbsp;&nbsp;
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="4">4</label> &nbsp;&nbsp;
+                <input type="radio" id="rate5" name="rating" value="5">
                 <label for="5">5 &#128077;</label>
                 <br /> <br />
+
+                <!-- Comments -->
                 <label class="text-bold" for="additional-feedback">Additional Feedback and Suggestions</label>
                 <br />
-                <textarea rows="5" cols="40"></textarea>
+                <textarea rows="5" cols="50"></textarea>
                 <br /> <br />
+
+                <!-- Button to submit the questionnaire -->
                 <input type="submit" value="Submit">
+
                 <p><span class="required"></span> Required</p>
-                <p>For feedback on service, please use the <a href="https://www.octranspo.com/en/customer-feedback/" rel="external">Customer Feedback Form</a>.</p>
+                <p>For feedback on service, please use the <a href="https://www.octranspo.com/en/customer-feedback/"
+                        rel="external">Customer Feedback Form</a>.</p>
+
             </form>
         </div>
 
@@ -110,6 +127,7 @@
             <p>&copy; No Copyright 2021 - <span class="text-italic">Website designed by Steven Li</span></p>
             <p>Contact: <a href="mailto:sli330@uottawa.ca">sli330@uottawa.ca</a></p>
         </footer>
+
     </div>
 
 </body>
