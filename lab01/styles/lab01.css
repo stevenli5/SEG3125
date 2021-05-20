@@ -81,7 +81,8 @@ a:hover {
 }
 
 .required:after {
-    content:" *";
+    content: " *";
+    font-weight: bold;
     color: #ff0000;
 }
 
