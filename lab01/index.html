@@ -47,11 +47,11 @@
                 <input type="text" id="lastName" name="lastName" required>
                 <br />
                 <label for="email">Email&nbsp;</label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email"> <span class="text-small">(if you require a response)</span>
                 <br />
 
                 <!-- Multi-selection type question -->
-                <p><span class="text-bold">Which features do you like?</span> <br />Select all that apply.</p>
+                <p><span class="text-bold">Which feature(s) do you enjoy?</span> <br /><span class="text-small">Select all that apply.</span></p>
                 <input type="checkbox" id="feature1" name="feature1" value="Travel Planner">
                 <label for="feature1">Travel Planner</label>
                 <br />
@@ -69,7 +69,7 @@
                 <br />
                 <input type="checkbox" id="feature6" name="feature6" value="Virtual Museum">
                 <label for="feature6">Virtual Museum</label>
-                <p>Please provide a reasoning if none are applicable.</p>
+                <p class="text-small">Please provide a reasoning if none are applicable.</p>
                 <label for="feature-more">Reasoning and Additional Comments:</label>
                 <br />
                 <textarea rows="3" cols="50"></textarea>
@@ -77,7 +77,7 @@
 
                 <!-- Single selection list type question -->
                 <p class="text-bold">How are you visiting the website?</p>
-                <label for="webbrowser" class="required">Web browser type</label>
+                <label for="webbrowser" class="required">Web Browser Type</label>
                 <select id="webbrowser" required>
                     <option disabled selected value>Select one</option>
                     <option value="Google Chrome">Google Chrome</option>
@@ -92,16 +92,16 @@
                 <br /> <br />
 
                 <!-- Radio button type question -->
-                <label class="text-bold required" for="rating">Overall Website Rating</label>
+                <label class="text-bold required" for="rating">How would you rate the website?</label>
                 <br />
                 <input type="radio" id="rate1" name="rating" value="1" required>
-                <label for="1">1 &#128078;</label> &nbsp;&nbsp;
+                <label for="1">1 &#128078;</label> &nbsp;
                 <input type="radio" id="rate2" name="rating" value="2">
-                <label for="2">2</label> &nbsp;&nbsp;
+                <label for="2">2</label> &nbsp;
                 <input type="radio" id="rate3" name="rating" value="3">
-                <label for="3">3</label> &nbsp;&nbsp;
+                <label for="3">3</label> &nbsp;
                 <input type="radio" id="rate4" name="rating" value="4">
-                <label for="4">4</label> &nbsp;&nbsp;
+                <label for="4">4</label> &nbsp;
                 <input type="radio" id="rate5" name="rating" value="5">
                 <label for="5">5 &#128077;</label>
                 <br /> <br />
@@ -115,7 +115,9 @@
                 <!-- Button to submit the questionnaire -->
                 <input type="submit" value="Submit">
 
-                <p><span class="required"></span> Required</p>
+                <p class="text-small"><span class="required"></span> Required</p>
+                <p class="text-small">Note: <span class="text-italic">"The website"</span> refers to the <a href="https://www.octranspo.com/en/"
+                    rel="external" title="OC Transpo website" target="_blank">OC Transpo website</a>.</p>
                 <p>For feedback on service, please use the <a href="https://www.octranspo.com/en/customer-feedback/"
                         rel="external">Customer Feedback Form</a>.</p>
 

@@ -20,7 +20,7 @@ footer {
 }
 
 a:hover {
-    background-color: #fa8072;
+    background-color: rgb(250, 128, 114, 0.3);
 }
 
 /* Custom style classes */
@@ -35,6 +35,10 @@ a:hover {
 
 .text-italic {
     font-style: italic;
+}
+
+.text-small {
+    font-size: small;
 }
 
 /* Custom division classes */
@@ -76,13 +80,9 @@ a:hover {
     padding-bottom: 1rem;
 }
 
-.feedback-form :is(h1, h2, h3, h4, h5, h6) {
-    margin-left: 1rem;
-}
-
 .required:after {
     content:" *";
-    color: red;
+    color: #ff0000;
 }
 
 /* Small device support */
