@@ -30,6 +30,10 @@ a:hover {
     text-align: center;
 }
 
+.checkbox-margin {
+    margin-left: 0.5rem;
+}
+
 .text-bold {
     font-weight: bold;
 }
