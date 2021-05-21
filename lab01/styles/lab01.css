@@ -14,7 +14,8 @@ footer {
     bottom: 0;
     background-color: #fa8072;
     grid-column: span 12;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     font-size: medium;
     text-align: center;
     border-radius: 1rem;
