@@ -21,6 +21,10 @@ footer {
     border-radius: 1rem;
 }
 
+textarea {
+    width: 100%;
+}
+
 a:hover {
     background-color: rgb(255, 0, 0, 0.2);
 }
