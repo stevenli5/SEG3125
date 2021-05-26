@@ -60,9 +60,7 @@ footer {
 }
 
 .navigation-button {
-    margin: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 0.5rem;
     padding: 0.1rem;
     font-size: x-large;
     display: flex;
