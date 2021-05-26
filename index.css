@@ -13,7 +13,7 @@ ul {
 footer {
     grid-column: span 12;
     font-size: medium;
-    position: block;
+    position: absolute;
     bottom: 0;
 }
 
