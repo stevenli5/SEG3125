@@ -72,13 +72,12 @@ footer {
     border-radius: 5rem;
 }
 
-
 .navigation-menu {
-    grid-column: span 4;
+    grid-column: span 3;
 }
 
 .content {
-    grid-column: span 8;
+    grid-column: span 9;
     display: flex;
     align-items: center;
     margin-left: 1rem;
@@ -92,6 +91,11 @@ footer {
 
 /* Small device support */
 
-/* @media screen and (max-width: 1200px) {
-
-} */
+@media screen and (max-width: 1200px) {
+    .navigation-menu {
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+}
