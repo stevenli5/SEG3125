@@ -68,6 +68,20 @@ footer a:hover {
     color: white;
 }
 
+.content {
+    grid-column: span 9;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.display {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
 .navigation-button {
     margin: 0.5rem;
     padding: 0.1rem;
@@ -85,13 +99,6 @@ footer a:hover {
 
 .navigation-menu {
     grid-column: span 3;
-}
-
-.content {
-    grid-column: span 9;
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
 }
 
 .required:after {
