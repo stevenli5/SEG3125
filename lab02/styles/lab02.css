@@ -2,6 +2,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e5e1ff;
 }
 
 footer {
@@ -15,6 +16,14 @@ footer {
     text-align: center;
     border-radius: 1rem;
     color: white;
+}
+
+footer a {
+    color:#00eeff;
+}
+
+footer a:hover {
+    color:#00aeff;
 }
 
 /* Custom style classes */
@@ -65,9 +74,13 @@ footer {
     font-size: x-large;
     display: flex;
     justify-content: center;
-    background-color: #CBC3E3;
+    background-color: #c0aaff;
     cursor: pointer;
     border-radius: 5rem;
+}
+
+.navigation-button:hover {
+    background-color: #9a75ff;
 }
 
 .navigation-menu {
