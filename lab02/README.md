@@ -15,3 +15,4 @@
 - Flexbox: https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element
 - Making a div clickable: https://thomas.vanhoutte.be/miniblog/making-a-div-element-clickable-in-html/
 ### JavaScript
+- Creating tabs with JavaScript: https://www.w3schools.com/howto/howto_js_tabs.asp
