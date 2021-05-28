@@ -82,7 +82,7 @@ footer a:hover {
     margin: 1rem;
 }
 
-.navigation-menu {
+.menu {
     grid-column: span 3;
 }
 
@@ -95,6 +95,7 @@ footer a:hover {
     background-color: #c0aaff;
     cursor: pointer;
     border-radius: 5rem;
+    box-shadow: 0 0 0 0.1rem #4f4399;
 }
 
 .navigation-button:hover {
@@ -107,10 +108,24 @@ footer a:hover {
     color: #ff0000;
 }
 
+.user {
+    display: none;
+}
+
+/* Custom IDs */
+
+#content1 {
+    display: block; 
+}
+
+#content2, #content3 {
+    display: none;
+}
+
 /* Small device support */
 
 @media screen and (max-width: 1200px) {
-    .navigation-menu {
+    .menu {
         grid-column: span 12;
     }
     .content {
