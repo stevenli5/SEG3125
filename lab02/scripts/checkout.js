@@ -1,3 +1,8 @@
+console.log(document.getElementById("productsTab"));
+
+document.getElementById("productsTab").addEventListener("click", displayProducts);
+
+
 let products = [
     {
         name: "Cookie",
@@ -72,19 +77,47 @@ let products = [
 ]
 
 function displayProducts() {
-    if (document.getElementById("lactose").checked) {
-        let display = document.getElementById("products");
-        products.forEach(item => {
-            if (item.lactoseFree) {
-                let lactoseDisplay = document.createElement("input");
-                lactoseDisplay.type = "checkbox";
-                lactoseDisplay.value = item.name;
-                let label = document.createTextNode(" " + item.name + " ($" + item.price + ")");
-                let temp = document.createElement("div");
-                temp.appendChild(lactoseDisplay);
-                temp.appendChild(label);
-                display.appendChild(temp);
-            }
-        });
-    }
+    document.getElementById("products").innerHTML = "";
+    let isLactose = document.getElementById("lactose").checked;
+    let isNut = document.getElementById("nut").checked;
+    let isOrganic = document.getElementById("organic").checked;
+    let display = document.getElementById("products");
+
+    let array = [...products];
+
+    array
+
 }
+
+
+    // products.forEach(item => {
+    //     if (isLactose && item.lactoseFree) {
+    //         let lactoseDisplay = document.createElement("input");
+    //             lactoseDisplay.type = "checkbox";
+    //             lactoseDisplay.value = item.name;
+    //             let label = document.createTextNode(" " + item.name + " ($" + item.price + ")");
+    //             let temp = document.createElement("div");
+    //             temp.appendChild(lactoseDisplay);
+    //             temp.appendChild(label);
+    //             display.appendChild(temp);
+    //     }
+        
+    // });
+
+
+//     if (document.getElementById("lactose").checked) {
+//         let display = document.getElementById("products");
+//         products.forEach(item => {
+//             if (item.lactoseFree) {
+//                 let lactoseDisplay = document.createElement("input");
+//                 lactoseDisplay.type = "checkbox";
+//                 lactoseDisplay.value = item.name;
+//                 let label = document.createTextNode(" " + item.name + " ($" + item.price + ")");
+//                 let temp = document.createElement("div");
+//                 temp.appendChild(lactoseDisplay);
+//                 temp.appendChild(label);
+//                 display.appendChild(temp);
+//             }
+//         });
+//     }
+// }
