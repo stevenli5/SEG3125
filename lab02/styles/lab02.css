@@ -26,6 +26,10 @@ footer a:hover {
     color:#00aeff;
 }
 
+label {
+    margin-left: 1rem;
+}
+
 /* Custom style classes */
 
 .align-center {
@@ -37,7 +41,7 @@ footer a:hover {
 }
 
 .checkbox-margin {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 .text-bold {
@@ -63,7 +67,7 @@ footer a:hover {
     grid-column: span 12;
     background-color: #4f4399;
     padding-left: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     text-align: center;
     color: white;
 }
