@@ -16,3 +16,4 @@
 - Making a div clickable: https://thomas.vanhoutte.be/miniblog/making-a-div-element-clickable-in-html/
 ### JavaScript
 - Creating tabs with JavaScript: https://www.101computing.net/creating-tabs-in-html-css-js/
+- Array filter() method: https://www.w3schools.com/jsref/jsref_filter.asp

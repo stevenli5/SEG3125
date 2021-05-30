@@ -5,6 +5,10 @@ body {
     background-color: #e5e1ff;
 }
 
+button {
+    font-size: large;
+}
+
 footer {
     position: block;
     bottom: 0;
