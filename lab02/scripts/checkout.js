@@ -101,7 +101,7 @@ function displayProducts() {
         checkbox.type = "checkbox";
         checkbox.value = item.name;
         checkbox.className = "groceries";
-        let label = document.createTextNode(" " + item.name + " ($" + item.price + ")");
+        let label = document.createTextNode(" " + item.name + " - $" + item.price);
         let temp = document.createElement("div");
         temp.appendChild(checkbox);
         temp.appendChild(label);
@@ -135,7 +135,7 @@ function displayCart() {
         cart.forEach(item => {
             display.innerHTML = "You have selected:"
             let li = document.createElement("li");
-            li.innerHTML = item.name + " ($" + item.price + ")";
+            li.innerHTML = item.name + " - $" + item.price;
             ul.appendChild(li);
             total += item.price;
         });
@@ -144,11 +144,18 @@ function displayCart() {
         p.innerHTML = "Your total is $" + total.toFixed(2);
         p.className = "text-bold";
         display.appendChild(p);
-        display.append("Thank you for shopping at Steven's Corner Shop!")
+        display.append("Thank you for shopping at Steven's Corner Shop!");
+        document.getElementById("checkoutButton").style.visibility = "visible";
     }
 }
 
 function clearCart() {
     cart = [];
     displayCart();
+    document.getElementById("checkoutButton").style.visibility = "hidden";
+}
+
+function checkout() {
+    alert("Items have been purchased. Thank you!");
+    clearCart();
 }
