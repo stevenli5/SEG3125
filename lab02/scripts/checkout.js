@@ -3,6 +3,7 @@ document.getElementById("cartTab").addEventListener("click", displayCart);
 
 let cart = [];
 
+/* 10 products */
 let products = [
     {
         name: "Cookie",
@@ -140,10 +141,14 @@ function displayCart() {
         });
         display.appendChild(ul);
         let p = document.createElement("p");
-        p.innerHTML = "Your total is $" + total;
+        p.innerHTML = "Your total is $" + total.toFixed(2);
         p.className = "text-bold";
         display.appendChild(p);
         display.append("Thank you for shopping at Steven's Corner Shop!")
     }
+}
 
+function clearCart() {
+    cart = [];
+    displayCart();
 }
