@@ -41,13 +41,6 @@ let products = [
         price: 1.99
     },
     {
-        name: "Mushrooms",
-        lactoseFree: true,
-        nutFree: true,
-        organic: true,
-        price: 2.49
-    },
-    {
         name: "Yogurt",
         lactoseFree: false,
         nutFree: true,
@@ -55,7 +48,14 @@ let products = [
         price: 2.49
     },
     {
-        name: "Avocado",
+        name: "Mushrooms",
+        lactoseFree: true,
+        nutFree: true,
+        organic: true,
+        price: 2.67
+    },
+    {
+        name: "Avocados",
         lactoseFree: true,
         nutFree: true,
         organic: true,
@@ -111,6 +111,8 @@ function displayProducts() {
 
 function addToCart() {
     let groceries = document.getElementsByClassName("groceries");
+    let added = document.getElementById("added");
+
     for (let i = 0; i < groceries.length; i++) {
         if (groceries[i].checked) {
             for (let j = 0; j < products.length; j++) {
@@ -119,6 +121,10 @@ function addToCart() {
                 }
             }
         }
+    }
+    if (cart.length != 0) {
+        added.innerHTML = "Added to cart!";
+        setTimeout(function(){ added.innerHTML = ""; }, 1000);
     }
 }
 
@@ -156,6 +162,6 @@ function clearCart() {
 }
 
 function checkout() {
-    alert("Items have been purchased. Thank you!");
+    alert("Item(s) have been purchased. Thank you!");
     clearCart();
 }

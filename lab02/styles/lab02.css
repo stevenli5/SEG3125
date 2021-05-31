@@ -7,6 +7,10 @@ body {
 
 button {
     font-size: large;
+    padding: 0.6rem;
+    color: #ffffff;
+    background-color: rgb(104, 50, 255);
+    border-radius: 1rem;
 }
 
 footer {
@@ -36,10 +40,6 @@ label {
 
 /* Custom style classes */
 
-.align-center {
-    text-align: center;
-}
-
 .bullet-none {
     list-style-type: none;
 }
@@ -56,11 +56,7 @@ label {
     font-style: italic;
 }
 
-.text-small {
-    font-size: small;
-}
-
-/* Custom division classes */
+/* Custom classes */
 
 .container {
     display: grid;
@@ -110,17 +106,21 @@ label {
     background-color: #9a75ff;
 }
 
-.required:after {
-    content: " *";
-    font-weight: bold;
-    color: #ff0000;
-}
-
 .user {
     display: none;
 }
 
 /* Custom IDs */
+
+#added {
+    font-size: large;
+    padding: 0.5rem;
+}
+
+#addToCart {
+    float: left;
+    margin-right: 1rem;
+}
 
 #content1 {
     display: block; 
@@ -138,5 +138,17 @@ label {
     }
     .content {
         grid-column: span 12;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .menu {
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+    #added {
+        padding: 0rem;
     }
 }
