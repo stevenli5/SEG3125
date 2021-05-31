@@ -112,9 +112,11 @@ function displayProducts() {
 function addToCart() {
     let groceries = document.getElementsByClassName("groceries");
     let added = document.getElementById("added");
+    let s4f1 = false;
 
     for (let i = 0; i < groceries.length; i++) {
         if (groceries[i].checked) {
+            s4f1 = true;
             for (let j = 0; j < products.length; j++) {
                 if (groceries[i].value === products[j].name) {
                     cart.push(products[j]);
@@ -122,7 +124,7 @@ function addToCart() {
             }
         }
     }
-    if (cart.length != 0) {
+    if (s4f1) {
         added.innerHTML = "Added to cart!";
         setTimeout(function(){ added.innerHTML = ""; }, 1000);
     }

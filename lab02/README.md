@@ -8,7 +8,6 @@
 - JavaScript
 
 ## Sources
-### HTML
 ### CSS
 - Creating a 12-column grid without Bootstrap: https://blog.theodo.com/2018/03/stop-using-bootstrap-layout-thanks-to-css-grid/
 - Adjusting display based on screen size: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
