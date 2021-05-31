@@ -64,7 +64,7 @@ let products = [
     {
         name: "Honey",
         lactoseFree: true,
-        nutFree: false,
+        nutFree: true,
         organic: true,
         price: 3.49
     },
