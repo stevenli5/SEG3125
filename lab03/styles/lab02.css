@@ -1,0 +1,154 @@
+/* Default CSS for regular tags */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e5e1ff;
+}
+
+button {
+    font-size: large;
+    padding: 0.6rem;
+    color: #ffffff;
+    background-color: rgb(104, 50, 255);
+    border-radius: 1rem;
+}
+
+footer {
+    position: block;
+    bottom: 0;
+    background-color: #4f4399;
+    grid-column: span 12;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: medium;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+}
+
+footer a {
+    color:#00eeff;
+}
+
+footer a:hover {
+    color:#00aeff;
+}
+
+label {
+    margin-left: 1rem;
+}
+
+/* Custom style classes */
+
+.bullet-none {
+    list-style-type: none;
+}
+
+.checkbox-margin {
+    margin-left: 0.2rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+/* Custom classes */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    grid-column: span 12;
+    background-color: #4f4399;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    grid-column: span 9;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.display {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.menu {
+    grid-column: span 3;
+}
+
+.navigation-button {
+    margin: 0.5rem;
+    padding: 0.1rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    background-color: #c0aaff;
+    cursor: pointer;
+    border-radius: 5rem;
+    box-shadow: 0 0 0 0.1rem #4f4399;
+}
+
+.navigation-button:hover {
+    background-color: #9a75ff;
+}
+
+.user {
+    display: none;
+}
+
+/* Custom IDs */
+
+#added {
+    font-size: large;
+    padding: 0.5rem;
+}
+
+#addToCart {
+    float: left;
+    margin-right: 1rem;
+}
+
+#content1 {
+    display: block; 
+}
+
+#content2, #content3 {
+    display: none;
+}
+
+/* Small device support */
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .menu {
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+    #added {
+        padding: 0rem;
+    }
+}

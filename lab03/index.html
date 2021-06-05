@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Title -->
+    <title>Steven's Corner Shop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/lab02.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Name of grocery store -->
+        <div class="header">
+            <h1>Steven's Corner Shop</h1>
+        </div>
+
+        <div class="display">
+            <p>Welcome to Steven's Corner Shop! Navigate the shop with the navigation menu.</p>
+        </div>
+
+        <!-- Navigation between three zones -->
+        <div class="menu">
+            <div class="navigation-button" onclick="selectTab(1);">
+                <p>Personal Data</p>
+            </div>
+            <div id="productsTab" class="navigation-button" onclick="selectTab(2);">
+                <p>Products</p>
+            </div>
+            <div id="cartTab" class="navigation-button" onclick="selectTab(3);">
+                <p>Cart</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Personal data entry area -->
+            <div id="content1" class="user">
+                <h2>Personal Data</h2>
+                <p>Please indicate your dietary restrictions and preferences.</p>
+            <input type="checkbox" id="lactose" value="lactoseFree">
+            <label for="preference1" class="checkbox-margin">I am <span class="text-bold">lactose intolerant</span></label>
+            <br><br>
+            <input type="checkbox" id="nut" value="nutFree">
+            <label for="preference2" class="checkbox-margin">I have a <span class="text-bold">nut allergy</span></label>
+            <br><br>
+            <input type="checkbox" id="organic" value="organic">
+            <label for="preference3" class="checkbox-margin">I prefer <span class="text-bold">organic options</span></label>
+            <p>If an option is selected, your <span class="text-bold">Products</span> tab will display the products that are suitable for you!</p>
+            </div>
+
+            <!-- Area for choosing items-->
+            <div id="content2" class="user">
+                <h2>Products</h2>
+                <p>Here are your available products based on your dietary restrictions and preferences.</p>
+                <div id="products"></div>
+                <br>
+                <button id="addToCart" type="button" onclick="addToCart()">Add To Cart</button>
+                <div id="added"></div>
+            </div>
+
+            <!-- Area giving the basket view -->
+            <div id="content3" class="user">
+                <h2>Cart</h2>
+                <div id="cart"></div>
+                <br>
+                <button id="checkoutButton" type="button" style="visibility: hidden;" onclick="checkout()">Check Out</button>
+                <br><br>
+                <button type="button" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+
+        <!-- Signature -->
+        <footer>
+            <address>Contact: <a href="mailto:sli330@uottawa.ca">sli330@uottawa.ca</a></address>
+            <p>&copy; No Copyright 2021 - <span class="text-italic">Website designed by Steven Li</span></p>
+        </footer>
+    </div>
+
+    <!-- External JavaScript -->
+    <script type="text/javascript" src="scripts/tabs.js"></script>
+    <script type="text/javascript" src="scripts/checkout.js"></script>
+</body>
+
+</html>
