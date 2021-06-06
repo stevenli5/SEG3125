@@ -10,7 +10,8 @@
     <title>Steven's Corner Shop</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="styles/lab02.css">
+    <link rel="stylesheet" href="styles/lab03.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
 
         <!-- Navigation between three zones -->
         <div class="menu">
-            <div class="navigation-button" onclick="selectTab(1);">
+            <!-- <div class="navigation-button" onclick="selectTab(1);">
                 <p>Personal Data</p>
             </div>
             <div id="productsTab" class="navigation-button" onclick="selectTab(2);">
@@ -35,27 +36,48 @@
             </div>
             <div id="cartTab" class="navigation-button" onclick="selectTab(3);">
                 <p>Cart</p>
-            </div>
+            </div> -->
         </div>
 
         <div class="content">
             <!-- Personal data entry area -->
-            <div id="content1" class="user">
-                <h2>Personal Data</h2>
-                <p>Please indicate your dietary restrictions and preferences.</p>
-            <input type="checkbox" id="lactose" value="lactoseFree">
+            <button onclick="myFunction('content1')" class="w3-btn w3-block w3-green w3-left-align">Open Section 1</button>
+            <div id="content1" class="w3-container w3-hide user">
+                <div class="content1-1">
+                    <h2>Personal Data</h2>
+                    <p>Please indicate your dietary restrictions and preferences.</p>
+                    <p>If an option is selected, your <span class="text-bold">Products</span> tab will display the products that are suitable for you!</p>
+                </div>
+                <div style="display: flex; justify-content: space-evenly;">
+                <div class="content1-2">
+                    <p>s34f1s34f1s34f34f1s34f1s34f1</p>
+                    <input type="checkbox" id="lactose" value="lactoseFree">
+                    <label for="preference1" class="checkbox-margin">I am <span class="text-bold">lactose intolerant</span></label>
+                </div>
+                <div class="content1-3">
+                    <p>1s34f1s34f1s34f1s34f1s</p>
+                    <input type="checkbox" id="nut" value="nutFree">
+                    <label for="preference2" class="checkbox-margin">I have a <span class="text-bold">nut allergy</span></label>
+                </div>
+                <div class="content1-4">
+                    <p>1s34f1s34f1s34f1s34f1s</p>
+                    <input type="checkbox" id="organic" value="organic">
+                    <label for="preference3" class="checkbox-margin">I prefer <span class="text-bold">organic options</span></label>
+                </div>
+                </div>
+            <!-- <input type="checkbox" id="lactose" value="lactoseFree">
             <label for="preference1" class="checkbox-margin">I am <span class="text-bold">lactose intolerant</span></label>
             <br><br>
             <input type="checkbox" id="nut" value="nutFree">
             <label for="preference2" class="checkbox-margin">I have a <span class="text-bold">nut allergy</span></label>
             <br><br>
             <input type="checkbox" id="organic" value="organic">
-            <label for="preference3" class="checkbox-margin">I prefer <span class="text-bold">organic options</span></label>
-            <p>If an option is selected, your <span class="text-bold">Products</span> tab will display the products that are suitable for you!</p>
+            <label for="preference3" class="checkbox-margin">I prefer <span class="text-bold">organic options</span></label> -->
             </div>
 
             <!-- Area for choosing items-->
-            <div id="content2" class="user">
+            <button id="productsTab" onclick="myFunction('content2')" class="w3-btn w3-block w3-green w3-left-align">Open Section 1</button>
+            <div id="content2" class="w3-container w3-hide user">
                 <h2>Products</h2>
                 <p>Here are your available products based on your dietary restrictions and preferences.</p>
                 <div id="products"></div>
@@ -65,14 +87,15 @@
             </div>
 
             <!-- Area giving the basket view -->
-            <div id="content3" class="user">
+            <button id="cartTab" onclick="myFunction('content3')" class="w3-btn w3-block w3-green w3-left-align">Open Section 1</button>
+            <div id="content3" class="w3-container w3-hide user">
+
                 <h2>Cart</h2>
                 <div id="cart"></div>
                 <br>
                 <button id="checkoutButton" type="button" style="visibility: hidden;" onclick="checkout()">Check Out</button>
                 <br><br>
                 <button type="button" onclick="clearCart()">Clear Cart</button>
-            </div>
         </div>
 
         <!-- Signature -->

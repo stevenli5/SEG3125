@@ -1,8 +1,7 @@
 /* Default CSS for regular tags */
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #e5e1ff;
+    background-color: #f6fff6;
 }
 
 button {
@@ -16,7 +15,7 @@ button {
 footer {
     position: block;
     bottom: 0;
-    background-color: #4f4399;
+    background-color: #1c5a1e;
     grid-column: span 12;
     margin-top: 1rem;
     padding-top: 1rem;
@@ -65,18 +64,33 @@ label {
 
 .header {
     grid-column: span 12;
-    background-color: #4f4399;
-    padding-left: 1rem;
+    background-color: #1c5a1e;
+    margin: 0.5rem;
     border-radius: 1rem;
     text-align: center;
     color: white;
 }
 
 .content {
-    grid-column: span 9;
-    display: flex;
+    grid-column: span 12;
     align-items: center;
-    margin-left: 1rem;
+    margin: 0.5rem;
+}
+
+.content1-1 {
+    grid-column: span 12;
+}
+
+.content1-2 {
+    grid-column: span 4;
+}
+
+.content1-3 {
+    grid-column: span 4;
+}
+
+.content1-4 {
+    grid-column: span 4;
 }
 
 .display {
@@ -87,7 +101,7 @@ label {
 }
 
 .menu {
-    grid-column: span 3;
+    grid-column: span 12;
 }
 
 .navigation-button {
@@ -122,13 +136,21 @@ label {
     margin-right: 1rem;
 }
 
-#content1 {
-    display: block; 
+#backNext {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+/* #content1 {
+    display: block;
+    background-color:#4f4399;
 }
 
 #content2, #content3 {
-    display: none;
-}
+    display: always;
+} */
 
 /* Small device support */
 

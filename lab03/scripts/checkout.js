@@ -10,70 +10,80 @@ let products = [
         lactoseFree: false,
         nutFree: false,
         organic: false,
-        price: 0.99
+        price: 0.99,
+        image: "../images/favicon.png"
     },
     {
         name: "Skittles",
         lactoseFree: true,
         nutFree: true,
         organic: false,
-        price: 1.29
+        price: 1.29,
+        image: "../images/favicon.png"
     },
     {
         name: "Cheese",
         lactoseFree: false,
         nutFree: true,
         organic: true,
-        price: 1.97
+        price: 1.97,
+        image: "../images/favicon.png"
     },
     {
         name: "Peanuts",
         lactoseFree: true,
         nutFree: false,
         organic: true,
-        price: 1.97
+        price: 1.97,
+        image: "../images/favicon.png"
     },
     {
         name: "Bread",
         lactoseFree: false,
         nutFree: true,
         organic: true,
-        price: 1.99
+        price: 1.99,
+        image: "../images/favicon.png"
     },
     {
         name: "Yogurt",
         lactoseFree: false,
         nutFree: true,
         organic: false,
-        price: 2.49
+        price: 2.49,
+        image: "../images/favicon.png"
     },
     {
         name: "Mushrooms",
         lactoseFree: true,
         nutFree: true,
         organic: true,
-        price: 2.67
+        price: 2.67,
+        image: "../images/favicon.png"
     },
     {
         name: "Avocados",
         lactoseFree: true,
         nutFree: true,
         organic: true,
-        price: 2.97
+        price: 2.97,
+        image: "../images/favicon.png"
     },
     {
         name: "Honey",
         lactoseFree: true,
         nutFree: true,
         organic: true,
-        price: 3.49
+        price: 3.49,
+        image: "../images/favicon.png"
     },
     {
         name: "Regular Milk",
         lactoseFree: false,
         nutFree: true,
         organic: false,
-        price: 4.97
+        price: 4.97,
+        image: "../lab03/images/favicon.png"
     }
 ]
 
@@ -97,6 +107,8 @@ function displayProducts() {
     }
 
     array.forEach(item => {
+        let img = document.createElement("img");
+        img.src = item.image;
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.value = item.name;
@@ -105,6 +117,7 @@ function displayProducts() {
         let temp = document.createElement("div");
         temp.appendChild(checkbox);
         temp.appendChild(label);
+        temp.appendChild(img);
         display.appendChild(temp);
     });
 }
