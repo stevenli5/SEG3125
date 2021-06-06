@@ -3,8 +3,8 @@
 button {
     font-size: large;
     padding: 0.6rem;
-    color: #ffffff;
-    background-color: rgb(104, 50, 255);
+    color: #000000;
+    background-color: rgb(125, 252, 184);
     border-radius: 1rem;
 }
 
@@ -111,22 +111,6 @@ label {
     grid-column: span 12;
 }
 
-.navigation-button {
-    margin: 0.5rem;
-    padding: 0.1rem;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    background-color: #c0aaff;
-    cursor: pointer;
-    border-radius: 5rem;
-    box-shadow: 0 0 0 0.1rem #4f4399;
-}
-
-.navigation-button:hover {
-    background-color: #9a75ff;
-}
-
 .user {
     display: none;
 }
@@ -150,6 +134,15 @@ label {
     padding: 0 2rem;
 }
 
+#back, #next {
+    background-color: rgb(36, 71, 52);
+    color: #ffffff;
+}
+
+#clear {
+    background-color: rgb(255, 103, 77);
+}
+
 #content1 {
     display: block;
 }
@@ -162,6 +155,7 @@ label {
     border-radius: 1rem;
     text-align: center;
     font-size: x-large;
+    border-style: solid;
 }
 
 #missing {

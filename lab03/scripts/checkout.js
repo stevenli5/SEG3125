@@ -1,6 +1,3 @@
-document.getElementById("productsTab").addEventListener("click", displayProducts);
-// document.getElementById("cartTab").addEventListener("click", displayCart);
-
 let cart = [];
 
 /* 10 products */
@@ -114,7 +111,7 @@ function next() {
             displayProducts();
             document.getElementById("back").style.visibility = "visible";
             document.getElementById("dataTab").style.boxShadow = "none";
-            document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 1.5)";
+            document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 2)";
         } else {
             missing.innerHTML = "Please indicate all dietary restrictions and preferences.";
             setTimeout(function () { missing.innerHTML = ""; }, 5000);
