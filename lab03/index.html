@@ -37,41 +37,48 @@
             <div id="cartTab" class="navigation-button" onclick="selectTab(3);">
                 <p>Cart</p>
             </div> -->
-            <div id="dataTab" class="w3-block w3-green w3-left-center" style="box-shadow: 0 8px 16px 0 rgba(61, 138, 63, 1.5);">Personal Data</div>
-            <div id="productsTab"
-            class="w3-block w3-green w3-left-center">Products</div>
+            <div id="dataTab" class="w3-block w3-green w3-left-center"
+                style="box-shadow: 0 8px 16px 0 rgba(61, 138, 63, 1.5);">Personal Data</div>
+            <div id="productsTab" class="w3-block w3-green w3-left-center">Products</div>
             <div id="cartTab" class="w3-block w3-green w3-left-center">Cart</div>
         </div>
 
         <div class="content">
             <!-- Personal data entry area -->
-            
+
             <div id="content1" class="user" style="display: block;">
                 <div class="content1-1">
                     <h2>Personal Data</h2>
                     <p>Please indicate your dietary restrictions and preferences.</p>
-                    <p>If an option is selected, your <span class="text-bold">Products</span> tab will display the products that are suitable for you!</p>
+                    <p>If an option is selected, your <span class="text-bold">Products</span> tab will display the
+                        products that are suitable for you!</p>
                 </div>
                 <div style="display: flex; justify-content: space-evenly;">
                     <div class="content1-2">
-                        <p>Are you lactose intolerant?</p>
-                        <input type="checkbox" id="lactose" value="lactoseFree">
-                        <label for="preference1" class="checkbox-margin">I am <span class="text-bold">lactose
-                                intolerant</span></label>
+                        <p class="text-bold">Are you lactose intolerant?</p>
+                            <input class="form" type="radio" id="isLactose" name="lactose" value="yes">
+                            <label for="isLactose">Yes</label><br>
+                            <input type="radio" id="notLactose" name="lactose" value="no">
+                            <label for="notLactose">No</label><br>
+
+
                     </div>
                     <div class="content1-3">
-                        <p>Are you allergic to nut products?</p>
-                        <input type="checkbox" id="nut" value="nutFree">
-                        <label for="preference2" class="checkbox-margin">I have a <span class="text-bold">nut
-                                allergy</span></label>
+                        <p class="text-bold">Are you allergic to nut products?</p>
+                        <input type="radio" id="isNut" name="nut" value="yes">
+                        <label for="isNut">Yes</label><br>
+                        <input type="radio" id="notNut" name="nut" value="no">
+                        <label for="notNut">No</label><br>
                     </div>
                     <div class="content1-4">
-                        <p>Do you prefer organic options?</p>
-                        <input type="checkbox" id="organic" value="organic">
-                        <label for="preference3" class="checkbox-margin">I prefer <span class="text-bold">organic
-                                options</span></label>
+                        <p class="text-bold">Do you prefer organic options?</p>
+                        <input type="radio" id="isOrganic" name="organic" value="yes">
+                        <label for="isOrganic">Yes</label><br>
+                        <input type="radio" id="notOrganic" name="organic" value="no">
+                        <label for="notOrganic">No</label><br>
                     </div>
                 </div>
+                <div id="missing" class="text-center"></div>
                 <!-- <input type="checkbox" id="lactose" value="lactoseFree">
             <label for="preference1" class="checkbox-margin">I am <span class="text-bold">lactose intolerant</span></label>
             <br><br>
@@ -83,7 +90,7 @@
             </div>
 
             <!-- Area for choosing items-->
-        
+
             <div id="content2" class="user" style="display: none;">
                 <h2>Products</h2>
                 <p>Here are your available products based on your dietary restrictions and preferences.</p>
@@ -101,6 +108,7 @@
                 <br>
                 <button id="checkoutButton" type="button" style="visibility: hidden;" onclick="checkout()">Check
                     Out</button>
+                <div id="thankYou" class="text-bold"></div>
                 <br><br>
                 <button type="button" onclick="clearCart()">Clear Cart</button>
             </div>

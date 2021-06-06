@@ -1,9 +1,5 @@
 /* Default CSS for regular tags */
 
-body {
-    background-color: #f6fff6;
-}
-
 button {
     font-size: large;
     padding: 0.6rem;
@@ -27,11 +23,11 @@ footer {
 }
 
 footer a {
-    color:#00eeff;
+    color: #00eeff;
 }
 
 footer a:hover {
-    color:#00aeff;
+    color: #00aeff;
 }
 
 label {
@@ -50,6 +46,10 @@ label {
 
 .text-bold {
     font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-italic {
@@ -101,6 +101,12 @@ label {
     margin: 1rem;
 }
 
+.image {
+    margin-left: 2rem;
+    height: 100px;
+    width: 100px;
+}
+
 .menu {
     grid-column: span 12;
 }
@@ -150,6 +156,17 @@ label {
 
 #content2, #content3 {
     display: none;
+}
+
+#dataTab, #productsTab, #cartTab {
+    border-radius: 1rem;
+    text-align: center;
+    font-size: x-large;
+}
+
+#missing {
+    font-size: large;
+    padding-top: 1rem;
 }
 
 /* Small device support */
