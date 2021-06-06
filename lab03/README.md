@@ -1,5 +1,4 @@
-# Lab 3 - Alternative for the Adaptive Online
-Grocery Site
+# Lab 3 - Alternative for the Adaptive Online Grocery Site
 
 [Click here for the web page.](https://stevenli5.github.io/seg3125/lab03/)
 
@@ -18,4 +17,4 @@ Grocery Site
 - appendChild(): https://www.w3schools.com/jsref/met_node_appendchild.asp
 - Array filter() method: https://www.w3schools.com/jsref/jsref_filter.asp
 - Temporary text for added to cart text: https://www.w3schools.com/jsref/met_win_settimeout.asp
-- According navigation system: https://www.w3schools.com/w3css/w3css_accordions.asp
+- Accordion navigation system: https://www.w3schools.com/w3css/w3css_accordions.asp

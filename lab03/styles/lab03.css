@@ -17,6 +17,7 @@ footer {
     bottom: 0;
     background-color: #1c5a1e;
     grid-column: span 12;
+    margin: 0.5rem;
     margin-top: 1rem;
     padding-top: 1rem;
     font-size: medium;
@@ -82,15 +83,15 @@ label {
 }
 
 .content1-2 {
-    grid-column: span 4;
+    grid-column: span 12;
 }
 
 .content1-3 {
-    grid-column: span 4;
+    grid-column: span 12;
 }
 
 .content1-4 {
-    grid-column: span 4;
+    grid-column: span 12;
 }
 
 .display {
@@ -122,6 +123,10 @@ label {
 
 .user {
     display: none;
+}
+
+.wizard {
+    grid-column: span 4;
 }
 
 /* Custom IDs */
