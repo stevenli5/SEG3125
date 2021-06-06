@@ -11,7 +11,7 @@ let products = [
         nutFree: false,
         organic: false,
         price: 0.99,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Skittles",
@@ -19,7 +19,7 @@ let products = [
         nutFree: true,
         organic: false,
         price: 1.29,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Cheese",
@@ -27,7 +27,7 @@ let products = [
         nutFree: true,
         organic: true,
         price: 1.97,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Peanuts",
@@ -35,7 +35,7 @@ let products = [
         nutFree: false,
         organic: true,
         price: 1.97,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Bread",
@@ -43,7 +43,7 @@ let products = [
         nutFree: true,
         organic: true,
         price: 1.99,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Yogurt",
@@ -51,7 +51,7 @@ let products = [
         nutFree: true,
         organic: false,
         price: 2.49,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Mushrooms",
@@ -59,7 +59,7 @@ let products = [
         nutFree: true,
         organic: true,
         price: 2.67,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Avocados",
@@ -67,7 +67,7 @@ let products = [
         nutFree: true,
         organic: true,
         price: 2.97,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Honey",
@@ -75,7 +75,7 @@ let products = [
         nutFree: true,
         organic: true,
         price: 3.49,
-        image: "../images/favicon.png"
+        image: "../lab03/images/favicon.png"
     },
     {
         name: "Regular Milk",
@@ -86,6 +86,42 @@ let products = [
         image: "../lab03/images/favicon.png"
     }
 ]
+
+function back() {
+    if (document.getElementById('content2').style.display === "block") {
+        console.log("hello");
+        document.getElementById('content2').style.display = "none";
+        document.getElementById('content1').style.display = "block";
+        document.getElementById("back").style.visibility = "hidden";
+        document.getElementById("productsTab").style.boxShadow = "none";
+        document.getElementById("dataTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 1.5)";
+    } else if (document.getElementById('content3').style.display === "block") {
+        document.getElementById('content3').style.display = "none";
+        document.getElementById('content2').style.display = "block";
+        displayProducts();
+        document.getElementById("next").style.visibility = "visible";
+        document.getElementById("cartTab").style.boxShadow = "none";
+        document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 1.5)";
+    }
+}
+
+function next() {
+    if (document.getElementById('content1').style.display === "block") {
+        document.getElementById('content1').style.display = "none";
+        document.getElementById('content2').style.display = "block";
+        displayProducts();
+        document.getElementById("back").style.visibility = "visible";
+        document.getElementById("dataTab").style.boxShadow = "none";
+        document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 1.5)";
+    } else if (document.getElementById('content2').style.display === "block") {
+        document.getElementById('content2').style.display = "none";
+        document.getElementById('content3').style.display = "block";
+        displayCart();
+        document.getElementById("next").style.visibility = "hidden";
+        document.getElementById("productsTab").style.boxShadow = "none";
+        document.getElementById("cartTab").style.boxShadow = "0 8px 16px 0 rgba(61, 138, 63, 1.5)";
+    }
+}
 
 function displayProducts() {
     document.getElementById("products").innerHTML = "";
@@ -139,7 +175,7 @@ function addToCart() {
     }
     if (s4f1) {
         added.innerHTML = "Added to cart!";
-        setTimeout(function(){ added.innerHTML = ""; }, 1000);
+        setTimeout(function () { added.innerHTML = ""; }, 1000);
     }
 }
 
