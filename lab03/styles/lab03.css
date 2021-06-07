@@ -151,7 +151,6 @@ label {
 }
 
 #dataTab, #productsTab, #cartTab {
-    border-radius: 1rem;
     text-align: center;
     font-size: x-large;
     border-style: solid;

@@ -90,14 +90,14 @@ function back() {
         document.getElementById('content1').style.display = "block";
         document.getElementById("back").style.visibility = "hidden";
         document.getElementById("productsTab").style.boxShadow = "none";
-        document.getElementById("dataTab").style.boxShadow = "0 8px 16px 0 rgba(127, 0, 0, 2)";
+        document.getElementById("dataTab").style.boxShadow = "0 12px 8px 0 rgba(127, 0, 0, 2)";
     } else if (document.getElementById('content3').style.display === "block") {
         document.getElementById('content3').style.display = "none";
         document.getElementById('content2').style.display = "block";
         displayProducts();
         document.getElementById("next").style.visibility = "visible";
         document.getElementById("cartTab").style.boxShadow = "none";
-        document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(127, 0, 0, 2)";
+        document.getElementById("productsTab").style.boxShadow = "0 12px 8px 0 rgba(127, 0, 0, 2)";
     }
 }
 
@@ -111,7 +111,7 @@ function next() {
             displayProducts();
             document.getElementById("back").style.visibility = "visible";
             document.getElementById("dataTab").style.boxShadow = "none";
-            document.getElementById("productsTab").style.boxShadow = "0 8px 16px 0 rgba(127, 0, 0, 2)";
+            document.getElementById("productsTab").style.boxShadow = "0 12px 8px 0 rgba(127, 0, 0, 2)";
         } else {
             missing.innerHTML = "Please indicate all dietary restrictions and preferences.";
             setTimeout(function () { missing.innerHTML = ""; }, 5000);
@@ -122,7 +122,7 @@ function next() {
         displayCart();
         document.getElementById("next").style.visibility = "hidden";
         document.getElementById("productsTab").style.boxShadow = "none";
-        document.getElementById("cartTab").style.boxShadow = "0 8px 16px 0 rgba(127, 0, 0, 2)";
+        document.getElementById("cartTab").style.boxShadow = "0 12px 8px 0 rgba(127, 0, 0, 2)";
     }
 }
 
