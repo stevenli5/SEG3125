@@ -94,13 +94,6 @@ label {
     grid-column: span 12;
 }
 
-.display {
-    grid-column: span 12;
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-}
-
 .image {
     margin-left: 2rem;
     height: 100px;
