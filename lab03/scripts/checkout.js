@@ -131,7 +131,6 @@ function submit() {
     let lactose = document.getElementsByName("lactose");
     let nut = document.getElementsByName("nut");
     let organic = document.getElementsByName("organic");
-    let missing = document.getElementById("missing");
 
     for (let i = 0; i < lactose.length; i++) {
         if (lactose[i].checked) {
