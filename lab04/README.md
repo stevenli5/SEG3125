@@ -9,5 +9,8 @@
 
 ## Sources
 ## CSS/Bootstrap
-
+- Bootstrap documentation: https://getbootstrap.com/docs/5.0/
+- Formatting inspiration: https://ryanmatte.ca/Website/
+- Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
+- Footer: https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
 ### Images

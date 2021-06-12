@@ -1,19 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <!-- Title -->
-    <title>Document</title>
+    <title>Steven's Veterinary Clinic</title>
 
     <!-- External Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .col-8 {
+            background-color: yellow;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <div class="container-fluid jumbotron bg-cover bg-dark text-white">
+        <div class="container py-3 text-center">
+            <img src="images/logo.png" style="height: 10rem; width: 10rem;">
+            <h1 class="display-4 font-weight-bold">Steven's Veterinary Clinic</h1>
+            <p class="font-italic mb-3">2267 Frank Bender St, Orléans, ON K1C 1M7</p>
+            <a href="#bookAppointment" role="button" class="btn btn-primary px-5">Book an Appointment</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1 bg-dark bg-gradient text-white">
+                <div>
+                    <h2 id="bookAppointment" class="fs-2 display-6">Book an Appointment</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="fs-2 display-6">Recent Updates</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </div>
+                <!-- <table class="table table-primary table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>hello</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>hello</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-8 col-sm-12 order-lg-1 order-sm-2 bg-light">
+                <div>
+                    <h2 class="fs-2 display-6">About Us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="fs-2 display-6">Our Services</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="fs-2 display-6">Meet the Team</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </div>
+            </div>
+            <div class="alert alert-primary d-flex align-items-center mt-3" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </symbol>
+                </svg>
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                    <use xlink:href="#info-fill" />
+                </svg>
+                <div>
+                    <span class="fw-bold">COVID-19 - June 11, 2021 Update:</span> Ontario has moved to Step 1 of the <a href="https://www.ontario.ca/page/reopening-ontario" target="_blank">Roadmap to Reopen</a>. We are now open for business, with COVID-19 protocols in place.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white sticky-top mt-3">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!-- Section: Text -->
+            <section class="mb-3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; No Copyright 2021
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
     <!-- External Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
