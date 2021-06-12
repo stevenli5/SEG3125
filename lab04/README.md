@@ -14,3 +14,6 @@
 - Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
 - Footer: https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
 ### Images
+- Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
+- Map: https://www.google.com/maps
+- Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
