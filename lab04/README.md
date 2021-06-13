@@ -17,3 +17,5 @@
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
 - Map: https://www.google.com/maps
 - Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
+## Miscellaneous
+- Pet services: https://www.thehamletveterinaryhospital.ca/en/services/
