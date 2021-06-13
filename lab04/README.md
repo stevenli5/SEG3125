@@ -10,7 +10,7 @@
 ## Sources
 ### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
-- - Lots of inspiration was taken from the documentation such as the carousel
+- - Lots of inspiration was taken from the documentation such as the cards, carousel, and form
 - Formatting inspiration: https://ryanmatte.ca/Website/
 - Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
 - Footer: https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
@@ -20,8 +20,9 @@
 - Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
 - Team photo: https://jhvet.com/about-us/team/
 - Dog: https://www.ovma.org/visiting-your-veterinarian-during-covid-19-what-you-need-to-know/
+- Meet the Expert photos are personal photos
 ### Miscellaneous
-- Pet services: https://www.thehamletveterinaryhospital.ca/en/services/
+- Service descriptions: https://www.stlaurentanimalhospital.ca/our-services
 
 ## Disclaimer
 The website designer, Steven Li, is not a veterinarian.

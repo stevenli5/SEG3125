@@ -77,13 +77,25 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!-- Recent Updates -->
+                <!-- News -->
                 <div class="bg-dark my-3 p-2">
-                    <h2 class="fs-2 display-6 mb-3">Recent Updates</h2>
+                    <h2 class="fs-2 display-6 mb-2 text-center">News</h2>
+                    <div class="card text-dark bg-light my-1">
+                        <div class="card-header text-center">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">New Team Member!</h5>
+                          <p class="card-text">We are excited to have Dr. Harnza Osman join our talented team of veterinarians! Harnza brings with him 11 years of experience in veterinary medicine.</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                          June 6<sup>th</sup>, 2021
+                        </div>
+                      </div>
                 </div>
                 <!-- Appointment Booking -->
-                <div class="bg-dark my-3 p-2">
-                    <h2 id="bookAppointment" class="fs-2 display-6 mb-3">Book an Appointment</h2>
+                <div id="bookAppointment" class="bg-dark my-3 p-2">
+                    <h2 class="fs-2 display-6 mb-3 text-center">Book an Appointment</h2>
                     <form>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
@@ -104,7 +116,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
                                 <input type="tel" class="form-control" placeholder="Phone Number">
-                                <label for="phone" class="ps-4">Phone&nbsp;Number</label>
+                                <label for="tel" class="ps-4">Phone&nbsp;Number</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1">
                                 <label for="language"
@@ -125,9 +137,9 @@
                                 <select class="form-select pt-4" required>
                                     <option value selected disabled>Select one</option>
                                     <option value="dentistry">Dentistry</option>
-                                    <option value="diagnostics">Diagnostics</option>
-                                    <option value="medicalTreatment">Medical treatment</option>
-                                    <option value="orthopedicSurgery">Orthopedic surgery</option>
+                                    <option value="diagnostics">Microchipping</option>
+                                    <option value="medicalTreatment">Pharmacy</option>
+                                    <option value="orthopedicSurgery">Preventive care</option>
                                     <option value="surgery">Surgery</option>
                                     <option value="vaccination">Vaccination</option>
                                 </select>
@@ -141,12 +153,12 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
-                                <label for="date" class="form-label mb-0 pt-0 ps-4 required">Date</label>
+                                <label for="date" class="form-label mb-0 pt-0 ps-4 required">Preferred&nbsp;Date</label>
                                 <input type="date" class="pt-4 form-control" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
-                                <label for="Time"
-                                    class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3 required">Time</label>
+                                <label for="time"
+                                    class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3 required">Preferred&nbsp;Time</label>
                                 <input type="time" class="pt-4 form-control" required>
                             </div>
                         </div>
@@ -154,7 +166,7 @@
                             <div class="col-12 fw-bold mb-2">
                                 <label for="additional" class="form-label">Additional Information</label>
                                 <textarea class="form-control" rows="5" maxlength="5000"
-                                    placeholder="Specify which type of service you would like or state any relevant information we'll need to know!"></textarea>
+                                    placeholder="State any relevant information we'll need to know!"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -167,7 +179,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a href=""><button type="submit" class="btn btn-primary" style="width: 100%;">Book
+                                <a href="#"><button type="submit" class="btn btn-primary" style="width: 100%;">Book
                                         Appointment</button></a>
                             </div>
                         </div>
@@ -197,23 +209,26 @@
                         </div>
                         <div class="col-lg-6 col-sm-12 pb-2 pe-3"><img src="images/interior.jpg"
                                 alt="Steven's Veterinary Hospital Interior"
-                                title="Steven's Veterinary Hospital Interior" style="height: 100%; width: 100%;"></div>
+                                title="Steven's Veterinary Hospital Interior" style="width: 100%;"></div>
                     </div>
                 </div>
+                <hr>
                 <!-- Services -->
                 <div>
-                    <h2 class="fs-3 fw-bold">Services</h2>
-                    <p>Here at Steven's Veterinary Hospital, we offer many services for our clients!</p>
+                    <h2 class="fs-3 fw-bold">Our Services</h2>
+                    <p>Here at Steven's Veterinary Hospital, we offer many services for our clients! Prices shown are before tax.</p>
                     <div class="row">
                         <div class="col-lg-4 col-sm-12 py-1 pe-lg-1">
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
                                     <h3 class="card-title fs-5">Dentistry</h3>
-                                    <ul class="card-text">
-                                        <li>Dental cleaning <span class="fw-bold">($175)</span></li>
-                                        <li>Dental extractions <span class="fw-bold">($25)</span></li>
-                                        <li>Oral mass removal <span class="fw-bold">($100)</span></li>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold ">Price Range:</span> $25 - $175</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        Routine dental prophylaxis helps to remove the tartar from above and below the gum line. This will prevent the consequences of unchecked dental disease in your pets. In our hospital, we perform routine dental cleaning and polishing as well as extractions as needed.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -221,12 +236,14 @@
                         <div class="col-lg-4 col-sm-12 py-1 px-lg-1">
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
-                                    <h3 class="card-title fs-5">Diagnostics</h3>
-                                    <ul class="card-text">
-                                        <li>Diabetes test <span class="fw-bold">($20)</span></li>
-                                        <li>General blood test <span class="fw-bold">($20)</span></li>
-                                        <li>Heartworm test <span class="fw-bold">($20)</span></li>
+                                    <h3 class="card-title fs-5">Microchipping</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold">Price:</span> $50</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        An implanted microchip with your pet's unique identification is permanent and can be the difference between lost and found. For your pet’s protection and your peace of mind, we can microchip your pet using internationally recognized ISO microchips. The procedure is quick and causes minimal discomfort.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -234,12 +251,14 @@
                         <div class="col-lg-4 col-sm-12 py-1 ps-lg-1">
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
-                                    <h3 class="card-title fs-5">Medical treatment</h3>
-                                    <ul class="card-text">
-                                        <li>Medical exams <span class="fw-bold">($35)</span></li>
-                                        <li>Nail trims <span class="fw-bold">($20)</span></li>
-                                        <li>Preventive care exams <span class="fw-bold">($35)</span></li>
+                                    <h3 class="card-title fs-5">Pharmacy</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold">Price Range:</span> $10 - $100</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        If there is a medication that your pet requires that we don't have in stock, we can have it ordered in at your convenience. If there is an ongoing need for medicine, the prescription may be refilled with a simple phone call. In all cases, prescriptions must be authorized by a doctor so please give us 48 hours notice should your pet need a prescription refilled.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -249,12 +268,14 @@
                         <div class="col-lg-4 col-sm-12 py-1 pe-lg-1">
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
-                                    <h3 class="card-title fs-5">Orthopedic Surgery</h3>
-                                    <ul class="card-text">
-                                        <li>Fracture repairs <span class="fw-bold">($2,000)</span></li>
-                                        <li>Hip surgery <span class="fw-bold">($1,900)</span></li>
-                                        <li>Luxating patella <span class="fw-bold">($1,400)</span></li>
+                                    <h3 class="card-title fs-5">Preventive care</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold">Price:</span> $35</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        A few cornerstones to good health include proper nutrition and exercise, control of internal and external parasites, maintaining good dental health and prevention of infectious diseases. Regular wellness exams allow us the opportunity to detect potential health problems before they become more serious.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -263,11 +284,13 @@
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
                                     <h3 class="card-title fs-5">Surgery</h3>
-                                    <ul class="card-text">
-                                        <li>Castration <span class="fw-bold">($230)</span></li>
-                                        <li>Cystotomy <span class="fw-bold">($1,500)</span></li>
-                                        <li>Gastrotomy <span class="fw-bold">($900)</span></li>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold">Price Range:</span> $500 - $1,500</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        At our hospital, our team is trained and equipped to perform a wide variety of surgical procedures should the need arise. Some of the more common procedures include lump removals, biopsies, the removal of bladder stones, and abdominal surgery to remove foreign body obstructions.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -276,11 +299,13 @@
                             <div class="card" style="height: 100%;">
                                 <div class="card-body">
                                     <h3 class="card-title fs-5">Vaccination</h3>
-                                    <ul class="card-text">
-                                        <li>Bordetella <span class="fw-bold">($10)</span></li>
-                                        <li>Coronavirus <span class="fw-bold">($5)</span></li>
-                                        <li>Influenza <span class="fw-bold">($5)</span></li>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><span class="fw-bold">Price Range:</span> $5 - $10</li>
                                     </ul>
+                                    <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        We use vaccines with the longest possible duration of immunity to ensure your pet will receive the least number of vaccinations over his or her lifetime. Most of the vaccines we use have a three-year duration of immunity. Getting in touch with your vet will help you determine which vaccines are required for your pet.
+                                    </p>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
 
@@ -288,6 +313,7 @@
                         </div>
                     </div>
                 </div>
+                <hr>
                 <!-- Meet the Experts -->
                 <div>
                     <h2 class="fs-3 fw-bold mt-2">Meet the Experts</h2>
@@ -306,12 +332,13 @@
                                         consistently prioritizes his clients and their pets as, consequently netting him
                                         multiple veterinary awards.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <ul class="list-group list-group-flush bg-primary">
                                     <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Golden
                                         Retrievers</li>
                                     <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Browsing Reddit,
                                         playing video games, and physical distancing</li>
-                                    <li class="list-group-item"><span class="fw-bold">Interests:</span> Politics and volunteering</li>
+                                    <li class="list-group-item"><span class="fw-bold">Interests:</span> Politics and
+                                        volunteering</li>
                                 </ul>
                             </div>
                         </div>
@@ -326,10 +353,11 @@
                                         communicate fluently in dozens of languages, such as Cantonese! Next time you
                                         see him, don't hesitate to greet him in your native language!</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <ul class="list-group list-group-flush bg-primary">
                                     <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Labrador
                                         Retrievers</li>
-                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Biking, reading, and chess</li>
+                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Biking, reading,
+                                        and chess</li>
                                     <li class="list-group-item"><span class="fw-bold">Interests:</span> Economics and
                                         hockey</li>
                                 </ul>
@@ -343,12 +371,14 @@
                                     <h4 class="fs-6">Veterinary Technician</h4>
                                     <p class="card-text">Joined Steven's Veterinary Hospital in 2020. Andrew loves
                                         meeting clients and developing a long-lasting relationship with them. In
-                                        addition to treating animals, he also enjoys it when clients talk about their cherishable pet stories!</p>
+                                        addition to treating animals, he also enjoys it when clients talk about their
+                                        cherishable pet stories!</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <ul class="list-group list-group-flush bg-primary">
                                     <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Monkeys
                                     </li>
-                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Badminton, biking, and playing American Truck Simulator</li>
+                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Badminton, biking,
+                                        and playing American Truck Simulator</li>
                                     <li class="list-group-item"><span class="fw-bold">Interests:</span> Money and stocks
                                     </li>
                                 </ul>
@@ -424,11 +454,13 @@
                                 d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
                         </svg><a href="mailto:contact@stevensveterinaryhospital.ca"
                             class="fs-5 link-info">contact@stevensveterinaryhospital.ca</a>
-                            <br>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                              </svg><span class="fs-5"> (613) 420-2019</span>
-                        </address>
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg><span class="fs-5"> (613) 420-2019</span>
+                    </address>
                 </div>
             </div>
         </div>
