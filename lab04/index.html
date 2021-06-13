@@ -19,7 +19,7 @@
     <!-- Header -->
     <div class="container-fluid jumbotron bg-cover bg-dark text-white">
         <div class="container py-3 text-center">
-            <img src="images/logo.png" style="height: 10rem; width: 10rem;">
+            <img src="images/logo.png" alt="Steven's Veterinary Hospital Logo" style="height: 10rem; width: 10rem;">
             <h1 class="display-4 font-weight-bold">Steven's Veterinary Hospital</h1>
             <address>
                 <p>2267 Frank Bender St, Orléans, ON K1C 1M7</p>
@@ -44,27 +44,45 @@
             </div>
             <!-- Sidebar -->
             <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1 bg-dark bg-gradient text-white pt-3 px-3">
-                <!-- Recent Updates -->
-                <div>
-                    <h2 class="fs-2 display-6">Recent Updates</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                        eum harum corrupti dicta, aliquam sequi voluptate quas.
-                    </p>
-                </div>
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/outside.png" class="d-block w-100" alt="..." style="height: 15rem;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/team.jpg" class="d-block w-100" alt="..." style="height: 15rem;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/dog-care.jpg" class="d-block w-100" alt="..." style="height: 15rem;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 <!-- Appointment Booking -->
-                <div>
+                <div class="bg-dark my-3 p-2">
                     <h2 id="bookAppointment" class="fs-2 display-6 mb-3">Book an Appointment</h2>
                     <form>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
-                                <input type="firstName" class="form-control" placeholder="First Name" required>
-                                <label for="firstName" class="ps-4 required">First Name</label>
+                                <input type="fname" class="form-control" placeholder="First Name" required>
+                                <label for="fname" class="ps-4 required">First Name</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
-                                <input type="lastName" class="form-control" placeholder="Last Name" required>
-                                <label for="lastName" class="ps-4 ps-sm-4 ps-lg-3 required">Last Name</label>
+                                <input type="lname" class="form-control" placeholder="Last Name" required>
+                                <label for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
@@ -75,7 +93,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
-                                <input type="phone" class="form-control" placeholder="Phone Number">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
                                 <label for="phone" class="ps-4">Phone Number</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1">
@@ -85,7 +103,7 @@
                                     <option value selected disabled>Select one</option>
                                     <option value="eng">English</option>
                                     <option value="fra">French</option>
-                                    <option value="both">Both</option>
+                                    <option value="both">English or French</option>
                                     <option value="other">Other (specify in Additional Information)</option>
                                 </select>
                             </div>
@@ -96,17 +114,17 @@
                                     class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Service</label>
                                 <select class="form-select pt-4" required>
                                     <option value selected disabled>Select one</option>
-                                    <option value="1">Dentistry</option>
-                                    <option value="2">Diagnostics</option>
-                                    <option value="3">Medical treatment</option>
-                                    <option value="4">Orthopedic surgery</option>
-                                    <option value="5">Surgery</option>
+                                    <option value="dentistry">Dentistry</option>
+                                    <option value="diagnostics">Diagnostics</option>
+                                    <option value="medicalTreatment">Medical treatment</option>
+                                    <option value="orthopedicSurgery">Orthopedic surgery</option>
+                                    <option value="surgery">Surgery</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating text-dark fw-bold mb-2">
-                                <input type="animal" class="form-control" placeholder="Animal" required>
+                                <input type="text" class="form-control" placeholder="Animal" required>
                                 <label for="animal" class="ps-4 required">Animal Species</label>
                             </div>
                         </div>
@@ -172,13 +190,12 @@
                                 offered a variety of high-quality pet services to over 1,500 clients in the
                                 Ottawa-Gatineau region.</p>
                             <p>The team, from the receptionists to the veterinarians, attribute their award-winning
-                                services to the amazing clients and cute animals they encounter.</p>
+                                services to the charismatic clients and cute animals they encounter.</p>
                             <p>Winning the <span class="fst-italic">Capital Region Best Critter Caregivers</span> award
                                 in 2020, the team has been expanding to meet the increase in demand for more
                                 appointments.</p>
                         </div>
-                        <div class="col-lg-6 col-sm-12 p-1"><img src="images/interior.jpg"
-                                style="height: 100%; width: 100%;"></div>
+                        <div class="col-lg-6 col-sm-12 p-1"><img src="images/interior.jpg" alt="Steven's Veterinary Hospital Interior" title="Steven's Veterinary Hospital Interior" style="height: 100%; width: 100%;"></div>
                     </div>
                 </div>
                 <!-- Services -->
@@ -261,8 +278,8 @@
                                 d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
                             <path
                                 d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
-                        </svg><a href="mailto:contact@stevensveterinaryclinic.ca"
-                            class="fs-5 link-info">contact@stevensveterinaryclinic.ca</a></address>
+                        </svg><a href="mailto:contact@stevensveterinaryhospital.ca"
+                            class="fs-5 link-info">contact@stevensveterinaryhospitalc.ca</a></address>
                 </div>
             </div>
         </div>

@@ -10,12 +10,15 @@
 ## Sources
 ## CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
+- - Lots of inspiration was taken from the documentation such as the carousel
 - Formatting inspiration: https://ryanmatte.ca/Website/
 - Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
 - Footer: https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
 ### Images
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
-- Map: https://www.google.com/maps
+- Map and outside image: https://www.google.com/maps
 - Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
+- Team photo: https://jhvet.com/about-us/team/
+- Dog: https://www.ovma.org/visiting-your-veterinarian-during-covid-19-what-you-need-to-know/
 ## Miscellaneous
 - Pet services: https://www.thehamletveterinaryhospital.ca/en/services/
