@@ -8,6 +8,8 @@
 - Bootstrap
 
 ## Sources
+### HTML
+- "Call-able" phone number link: https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
 ### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
 - - Lots of inspiration was taken from the documentation such as the cards, carousel, and form
