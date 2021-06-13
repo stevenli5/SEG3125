@@ -8,7 +8,7 @@
 - Bootstrap
 
 ## Sources
-## CSS/Bootstrap
+### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
 - - Lots of inspiration was taken from the documentation such as the carousel
 - Formatting inspiration: https://ryanmatte.ca/Website/
@@ -20,5 +20,8 @@
 - Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
 - Team photo: https://jhvet.com/about-us/team/
 - Dog: https://www.ovma.org/visiting-your-veterinarian-during-covid-19-what-you-need-to-know/
-## Miscellaneous
+### Miscellaneous
 - Pet services: https://www.thehamletveterinaryhospital.ca/en/services/
+
+## Disclaimer
+The website designer, Steven Li, is not a veterinarian.
