@@ -22,7 +22,7 @@
 - Clinic interior: https://dailyillini.com/features/2016/11/15/illinois-vet-med-treats-variety-animals/
 - Team photo: https://jhvet.com/about-us/team/
 - Dog: https://www.ovma.org/visiting-your-veterinarian-during-covid-19-what-you-need-to-know/
-- Meet the Expert photos are personal photos
+- Expert photos are personal photos
 ### Miscellaneous
 - Service descriptions: https://www.stlaurentanimalhospital.ca/our-services
 
