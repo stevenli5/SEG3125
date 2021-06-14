@@ -15,7 +15,7 @@
 - - Lots of inspiration was taken from the documentation such as the cards, carousel, and form
 - Formatting inspiration: https://ryanmatte.ca/Website/
 - Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
-- Footer general layout (not much of it is the same): https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
+- Footer general layout (only the layout was copied): https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
 ### Images
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
 - Map and outside image: https://www.google.com/maps
