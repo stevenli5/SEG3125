@@ -1,6 +1,7 @@
 # Lab 5 - Enhancement of a Health Service Site
 
 [Click here for the web page.](https://stevenli5.github.io/seg3125/lab05/)
+This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final version.
 
 ## Tools used
 - HTML
