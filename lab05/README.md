@@ -11,6 +11,9 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 ## Sources
 ### HTML
 - "Call-able" phone number link: https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
+- Credit card input: https://codepen.io/stezu/pen/eghLC
+- Navbar: https://www.codeply.com/p/P0KN7DNsEq
+- - data-offset navbar: https://stackoverflow.com/questions/39588914/how-do-i-add-a-data-offset-to-a-bootstrap-4-fixed-top-responsive-navbar
 ### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
 - - Lots of inspiration was taken from the documentation such as the cards, carousel, and form

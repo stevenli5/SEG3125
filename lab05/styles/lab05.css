@@ -12,3 +12,11 @@ img {
     font-weight: bold;
     color: #ff0000;
 }
+
+span.anchor {
+    margin-top: -5rem; /* height of nav, in this case 54px */
+    display: block;
+    height: 5rem; /* height of nav, in this case 54px */
+    visibility: hidden;
+    position: relative;
+}
