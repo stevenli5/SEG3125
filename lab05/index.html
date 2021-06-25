@@ -22,22 +22,27 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-secondary fixed-top">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-center">
-                <ul class="navbar-nav fs-4" id="hamburger">
+            <div class="collapse navbar-collapse text-center" id="hamburger">
+                <ul class="navbar-nav fs-4">
                     <li class="nav-item active">
-                        <a class="nav-link text-white px-4" href="#about"><i class="fas fa-question-circle pe-1"></i> About Us</a>
+                        <a class="nav-link text-white px-4" href="#about"><i class="fas fa-question-circle pe-1"></i>
+                            About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#services"><i class="fas fa-concierge-bell pe-1"></i> Our Services</a>
+                        <a class="nav-link text-white px-4" href="#services"><i
+                                class="fas fa-hand-holding-medical pe-1"></i> Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#experts"><i class="fas fa-users pe-1"></i> Meet the Experts</a>
+                        <a class="nav-link text-white px-4" href="#experts"><i class="fas fa-users pe-1"></i> Meet the
+                            Experts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#footer"><i class="fas fa-address-card pe-1"></i> Contact Us</a>
+                        <a class="nav-link text-white px-4" href="#footer"><i class="fas fa-address-card pe-1"></i>
+                            Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -115,24 +120,10 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!-- News -->
-                <div class="bg-dark my-3 p-2">
-                    <h2 class="fs-2 display-6 mb-2 text-center">News</h2>
-                    <div class="card text-dark bg-light my-1">
-                        <div class="card-header text-center">
-                            <h3 class="fs-6 pt-1 text-dark text-center">New Team Member!</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">We are excited to have Dr. Harnza Osmen join our talented team of
-                                veterinarians! Harnza brings with him 34 years of experience in veterinary medicine.</p>
-                        </div>
-                        <div class="card-footer text-muted text-center">
-                            June 9<sup>th</sup>, 2021
-                        </div>
-                    </div>
-                </div>
+
                 <!-- Appointment Booking -->
-                <div id="book" class="bg-dark my-3 p-2">
+                <span class="anchorBook" id="book"></span>
+                <div class="bg-dark my-3 p-2">
                     <h2 class="fs-2 display-6 mb-3 text-center">Book an Appointment</h2>
                     <form>
                         <div class="row">
@@ -170,8 +161,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating mb-2">
-                                <label for="service"
-                                    class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select a Service</label>
+                                <label for="service" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select
+                                    a Service</label>
                                 <select class="form-select pt-4" required>
                                     <option value selected disabled>Select one</option>
                                     <option value="dentistry">Dentistry</option>
@@ -185,8 +176,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating mb-2">
-                                <label for="expert"
-                                    class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose an Expert</label>
+                                <label for="expert" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose
+                                    an Expert</label>
                                 <select class="form-select pt-4" required>
                                     <option value="any">Any</option>
                                     <option value="steven">Steven Li</option>
@@ -236,8 +227,9 @@
                         </div>
                         <div class="row">
                             <div class="col-12 mt-1">
-                                <a href="#"><button type="submit" class="btn btn-primary" style="width: 100%;">Book
-                                        Appointment</button></a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#success" style="width: 100%;">Book
+                                        Appointment</button>
                             </div>
                         </div>
                         <div class="row">
@@ -247,25 +239,21 @@
                         </div>
                     </form>
                 </div>
-                <!-- Testimonials -->
-                <div class="bg-dark my-3 p-2">
-                    <h2 class="fs-2 display-6 mb-2 text-center">Testimonials</h2>
-                    <blockquote><span class="fst-italic">"The staff here is phenomenal!
-                            Shoutout to the amazing receptionists!"</span>
-                        <br>
-                        -&nbsp;Alex Vandici
-                    </blockquote>
-                    <blockquote><span class="fst-italic">"My dog receives the best service here. Every time I mention
-                            Steven's Veterinary Hospital to my dog, he jumps around uncontrollably!"</span>
-                        <br>
-                        -&nbsp;Sufwan Madud
-                    </blockquote>
-                    <blockquote><span class="fst-italic">"Abrar is literally one of the best veterinarians I've ever
-                            met! I was even able to communicate with him in Ojibwe! He is such a knowledgeable
-                            man!"</span>
-                        <br>
-                        -&nbsp;Anonymous
-                    </blockquote>
+            </div>
+
+            <!-- Modal for Successful Booking -->
+            <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content alert-success" style="background-color: #D1E7DD;">
+                        <div class="modal-header">
+                            <h3 class="modal-title fs-4" id="exampleModalLabel"><i class="fas fa-check-circle pe-1"></i> Booking Successful!</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Your appointment has been booked! <br>
+                            Please check your email for your confirmation number.
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -274,7 +262,7 @@
                 <!-- About Us -->
                 <div>
                     <span class="anchor" id="about"></span>
-                    <h2 class="fs-3 fw-bold">About Us</h2>
+                    <h2 class="fs-3 fw-bold"><i class="fas fa-question-circle pe-1"></i> About Us</h2>
                     <div class="row">
                         <div class="col-lg-6 col-sm-12">
                             <p>Since its founding on April 2<sup>nd</sup>, 2019, Steven's Veterinary Hospital has
@@ -310,7 +298,7 @@
                 <!-- Services -->
                 <div>
                     <span class="anchor" id="services"></span>
-                    <h2 class="fs-3 fw-bold">Our Services</h2>
+                    <h2 class="fs-3 fw-bold"><i class="fas fa-hand-holding-medical pe-1"></i> Our Services</h2>
                     <p>Here at Steven's Veterinary Hospital, we offer many services for our clients' pets! Prices shown
                         are
                         before tax.</p>
@@ -324,12 +312,28 @@
                                             $25&nbsp;-&nbsp;$175</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        Routine dental prophylaxis helps to remove the tartar from above and below the
-                                        gum line. This will prevent the consequences of unchecked dental disease in your
-                                        pets. In our hospital, we perform routine dental cleaning and polishing as well
-                                        as extractions as needed.
-                                    </p>
+                                    <div class="accordion" id="accordion1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="moreDentistry">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseDentistry">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapseDentistry" class="accordion-collapse collapse"
+                                                aria-labelledby="moreDentistry" data-bs-parent="#accordion1">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        Routine dental prophylaxis helps to remove the tartar from above
+                                                        and below the
+                                                        gum line. This will prevent the consequences of unchecked dental
+                                                        disease in your
+                                                        pets.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -342,12 +346,30 @@
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $50</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        An implanted microchip with your pet's unique identification is permanent and
-                                        can be the difference between lost and found. For your pet’s protection and your
-                                        peace of mind, we can microchip your pet using internationally recognized ISO
-                                        microchips. The procedure is quick and causes minimal discomfort.
-                                    </p>
+                                    <div class="accordion" id="accordion2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="moreMicrochipping">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseMicrochipping">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapseMicrochipping" class="accordion-collapse collapse"
+                                                aria-labelledby="moreMicrochipping" data-bs-parent="#accordion2">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        An implanted microchip with your pet's unique identification is
+                                                        permanent and
+                                                        can be the difference between lost and found. For your pet’s
+                                                        protection and your
+                                                        peace of mind, we can microchip your pet using internationally
+                                                        recognized ISO
+                                                        microchips.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -362,13 +384,29 @@
                                         </li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        If there is a medication that your pet requires that we don't have in stock, we
-                                        can have it ordered in at your convenience. If there is an ongoing need for
-                                        medicine, the prescription may be refilled with a simple phone call. In all
-                                        cases, prescriptions must be authorized by a doctor so please give us 48 hours
-                                        notice should your pet need a prescription refilled.
-                                    </p>
+                                    <div class="accordion" id="accordion3">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="morePharmacy">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsePharmacy">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapsePharmacy" class="accordion-collapse collapse"
+                                                aria-labelledby="morePharmacy" data-bs-parent="#accordion3">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        If there is a medication that your pet requires that we don't
+                                                        have in stock, we
+                                                        can have it ordered in at your convenience. If there is an
+                                                        ongoing need for
+                                                        medicine, the prescription may be refilled with a simple phone
+                                                        call.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -383,12 +421,28 @@
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $35</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        A few cornerstones to good health include proper nutrition and exercise, control
-                                        of internal and external parasites, maintaining good dental health and
-                                        prevention of infectious diseases. Regular wellness exams allow us the
-                                        opportunity to detect potential health problems before they become more serious.
-                                    </p>
+                                    <div class="accordion" id="accordion4">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="morePreventiveCare">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsePreventineCare">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapsePreventineCare" class="accordion-collapse collapse"
+                                                aria-labelledby="morePreventiveCare" data-bs-parent="#accordion4">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        A few cornerstones to good health include proper nutrition and
+                                                        exercise, control
+                                                        of internal and external parasites, maintaining good dental
+                                                        health and
+                                                        prevention of infectious diseases.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -402,12 +456,29 @@
                                             $500&nbsp;-&nbsp;$1,500</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        At our hospital, our team is trained and equipped to perform a wide variety of
-                                        surgical procedures should the need arise. Some of the more common procedures
-                                        include lump removals, biopsies, the removal of bladder stones, and abdominal
-                                        surgery to remove foreign body obstructions.
-                                    </p>
+                                    <div class="accordion" id="accordion5">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="moreSurgery">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseSurgery">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapseSurgery" class="accordion-collapse collapse"
+                                                aria-labelledby="moreSurgery" data-bs-parent="#accordion5">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        Some common
+                                                        procedures
+                                                        include lump removals, biopsies, the removal of bladder stones,
+                                                        and
+                                                        abdominal
+                                                        surgery to remove foreign body obstructions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
                             </div>
@@ -422,182 +493,284 @@
                                         </li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
-                                    <p class="card-text">
-                                        We use vaccines with the longest possible duration of immunity to ensure your
-                                        pet will receive the least number of vaccinations over his or her lifetime. Most
-                                        of the vaccines we use have a three-year duration of immunity. Getting in touch
-                                        with your vet will help you determine which vaccines are required for your pet.
-                                    </p>
+                                    <div class="accordion" id="accordion6">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="moreVaccination">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseVaccination">
+                                                    More information
+                                                </button>
+                                            </h2>
+                                            <div id="collapseVaccination" class="accordion-collapse collapse"
+                                                aria-labelledby="moreVaccination" data-bs-parent="#accordion6">
+                                                <div class="accordion-body">
+                                                    <p class="card-text">
+                                                        We use vaccines with the longest possible duration of immunity
+                                                        to ensure your
+                                                        pet will receive the least number of vaccinations over his or
+                                                        her lifetime. Most
+                                                        of the vaccines we use have a three-year duration of immunity.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="list-group bg-primary" style="height: 0.3rem;"></div>
-
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr class="my-3">
-                <!-- Meet the Experts -->
-                <div>
-                    <span class="anchor" id="experts"></span>
-                    <h2 class="fs-3 fw-bold mt-1">Meet the Experts</h2>
-                    <p>Our team contains one of the most dynamic group of veterinary experts in the Ottawa-Gatineau
-                        region. When you bring your pet in for an appointment, rest assured that they are in a clean and
-                        professional environment.</p>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 py-1">
-                            <div class="card" style="height: 100%;">
-                                <img src="images/steven.png" class="card-img-top" alt="Steven Li" title="Steven Li">
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5">Steven Li</h3>
-                                    <h4 class="fs-6">Doctor of Veterinary Medicine</h4>
-                                    <p class="card-text">Founded Steven's Veterinary Hospital in 2019. Having worked in
-                                        many other veterinary clinics, he decided it was time to open his own. Steven
-                                        consistently prioritizes his clients and their pets, netting him
-                                        multiple veterinary awards!</p>
+                    <hr class="my-3">
+                    <!-- Meet the Experts -->
+                    <div>
+                        <span class="anchor" id="experts"></span>
+                        <h2 class="fs-3 fw-bold"><i class="fas fa-users pe-1"></i> Meet the Experts</h2>
+                        <p>Our team contains one of the most dynamic group of veterinary experts in the Ottawa-Gatineau
+                            region. When you bring your pet in for an appointment, rest assured that they are in a clean
+                            and
+                            professional environment.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 py-1">
+                                <div class="card" style="height: 100%;">
+                                    <img src="images/steven.png" class="card-img-top" alt="Steven Li" title="Steven Li">
+                                    <div class="card-body">
+                                        <h3 class="card-title fs-5">Steven Li</h3>
+                                        <h4 class="fs-6">Doctor of Veterinary Medicine</h4>
+                                        <div class="accordion" id="accordionSteven">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="moreSteven">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseSteven">
+                                                        About Steven
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSteven" class="accordion-collapse collapse"
+                                                    aria-labelledby="moreSteven" data-bs-parent="#accordionSteven">
+                                                    <div class="accordion-body">
+                                                        <p class="card-text">Founded Steven's Veterinary Hospital in
+                                                            2019.
+                                                            Having worked in
+                                                            many other veterinary clinics, he decided it was time to
+                                                            open
+                                                            his own. Steven
+                                                            consistently prioritizes his clients and their pets, netting
+                                                            him
+                                                            multiple veterinary awards!</p>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush bg-primary">
+                                                        <li class="list-group-item"><span class="fw-bold">Favourite
+                                                                Animal:</span> Golden
+                                                            Retrievers</li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Hobbies:</span>
+                                                            Browsing Reddit,
+                                                            playing video games, and physical distancing</li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Interests:</span>
+                                                            Politics and
+                                                            volunteering</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="list-group list-group-flush bg-primary">
-                                    <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Golden
-                                        Retrievers</li>
-                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Browsing Reddit,
-                                        playing video games, and physical distancing</li>
-                                    <li class="list-group-item"><span class="fw-bold">Interests:</span> Politics and
-                                        volunteering</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12 py-1">
-                            <div class="card" style="height: 100%;">
-                                <img src="images/abrar.png" class="card-img-top" alt="Abrar Arif" title="Abrar Arif">
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5">Abrar Arif</h3>
-                                    <h4 class="fs-6">Veterinary Technician</h4>
-                                    <p class="card-text">Joined Steven's Veterinary Hospital in 2019. Growing up, Abrar
-                                        has always had a strong passion for working with animals. He is able to
-                                        communicate fluently in dozens of languages such as Cantonese! Next time you
-                                        see him, don't hesitate to greet him in your native language!</p>
+                            <div class="col-lg-4 col-sm-12 py-1">
+                                <div class="card" style="height: 100%;">
+                                    <img src="images/abrar.png" class="card-img-top" alt="Abrar Arif"
+                                        title="Abrar Arif">
+                                    <div class="card-body">
+                                        <h3 class="card-title fs-5">Abrar Arif</h3>
+                                        <h4 class="fs-6">Veterinary Technician</h4>
+                                        <div class="accordion" id="accordionAbrar">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="moreAbrar">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseAbrar">
+                                                        About Abrar
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseAbrar" class="accordion-collapse collapse"
+                                                    aria-labelledby="moreAbrar" data-bs-parent="#accordionAbrar">
+                                                    <div class="accordion-body">
+                                                        <p class="card-text">Joined Steven's Veterinary Hospital in
+                                                            2019.
+                                                            Growing up, Abrar
+                                                            has always had a strong passion for working with animals. He
+                                                            is
+                                                            able to
+                                                            communicate fluently in dozens of languages such as
+                                                            Cantonese!
+                                                            Next time you
+                                                            see him, don't hesitate to greet him in your native
+                                                            language!
+                                                        </p>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush bg-primary">
+                                                        <li class="list-group-item"><span class="fw-bold">Favourite
+                                                                Animal:</span> Labrador
+                                                            Retrievers</li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Hobbies:</span>
+                                                            Biking, reading,
+                                                            and chess</li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Interests:</span>
+                                                            Indigenous
+                                                            culture and
+                                                            hockey</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="list-group list-group-flush bg-primary">
-                                    <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Labrador
-                                        Retrievers</li>
-                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Biking, reading,
-                                        and chess</li>
-                                    <li class="list-group-item"><span class="fw-bold">Interests:</span> Indigenous
-                                        culture and
-                                        hockey</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12 py-1">
-                            <div class="card" style="height: 100%;">
-                                <img src="images/andrew.png" class="card-img-top" alt="Andrew Lau" title="Andrew Lau">
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5">Andrew Lau</h3>
-                                    <h4 class="fs-6">Veterinary Technician</h4>
-                                    <p class="card-text">Joined Steven's Veterinary Hospital in 2020. Andrew loves
-                                        meeting clients and developing a long-lasting relationship with them. In
-                                        addition to treating animals, he also enjoys it when clients talk about their
-                                        cherishable pet stories!</p>
+                            <div class="col-lg-4 col-sm-12 py-1">
+                                <div class="card" style="height: 100%;">
+                                    <img src="images/andrew.png" class="card-img-top" alt="Andrew Lau"
+                                        title="Andrew Lau">
+                                    <div class="card-body">
+                                        <h3 class="card-title fs-5">Andrew Lau</h3>
+                                        <h4 class="fs-6">Veterinary Technician</h4>
+                                        <div class="accordion" id="accordionAndrew">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="moreAndrew">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseAndrew">
+                                                        About Andrew
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseAndrew" class="accordion-collapse collapse"
+                                                    aria-labelledby="moreAndrew" data-bs-parent="#accordion
+                                            Andrew">
+                                                    <div class="accordion-body">
+                                                        <p class="card-text">Joined Steven's Veterinary Hospital in
+                                                            2020.
+                                                            Andrew loves
+                                                            meeting clients and developing a long-lasting relationship
+                                                            with
+                                                            them. In
+                                                            addition to treating animals, he also enjoys it when clients
+                                                            talk about their
+                                                            cherishable pet stories!</p>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush bg-primary">
+                                                        <li class="list-group-item"><span class="fw-bold">Favourite
+                                                                Animal:</span> Monkeys
+                                                        </li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Hobbies:</span>
+                                                            Badminton, biking,
+                                                            and playing American Truck Simulator</li>
+                                                        <li class="list-group-item"><span
+                                                                class="fw-bold">Interests:</span>
+                                                            Money and stocks
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="list-group list-group-flush bg-primary">
-                                    <li class="list-group-item"><span class="fw-bold">Favourite Animal:</span> Monkeys
-                                    </li>
-                                    <li class="list-group-item"><span class="fw-bold">Hobbies:</span> Badminton, biking,
-                                        and playing American Truck Simulator</li>
-                                    <li class="list-group-item"><span class="fw-bold">Interests:</span> Money and stocks
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <span class="anchor" id="footer"></span>
-    <footer class="bg-dark text-center text-white sticky-top mt-3">
-        <div class="pt-1"></div>
-        <div class="container my-3 p-2" style="background-color: #2E3238;">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <h2 class="fs-4 display-6">Our Location</h2>
-                    <address>
-                        <p>2267 Frank Bender St, Orléans, ON K1C 1M7</p>
-                    </address>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.768562461178!2d-75.51205055290968!3d45.45369614673232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1217779c4c67%3A0x86d4da01e225e782!2s2267%20Frank%20Bender%20St%2C%20Orl%C3%A9ans%2C%20ON%20K1C%201M7!5e1!3m2!1sen!2sca!4v1623631456423!5m2!1sen!2sca"
-                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                        title="Steven's Veterinary Hospital Google Maps view"></iframe>
-                </div>
-                <div class="col-lg-4 col-sm-12 mt-lg-5 pt-lg-3 mt-sm-3 mt-3">
-                    <h2 class="fs-4 display-6 pb-lg-2 mt-lg-5">Store Hours</h2>
-                    <p><span class="fw-bold">Sunday:</span> 10:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM
+        <!-- Footer -->
+        <span class="anchor" id="footer"></span>
+        <footer class="bg-dark text-center text-white sticky-top mt-3">
+            <div class="pt-1"></div>
+            <div class="container my-3 p-2" style="background-color: #2E3238;">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <h2 class="fs-4 display-6"><i class="fas fa-map-marked-alt pe-1"></i> Our Location</h2>
+                        <address>
+                            <p>2267 Frank Bender St, Orléans, ON K1C 1M7</p>
+                        </address>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.768562461178!2d-75.51205055290968!3d45.45369614673232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1217779c4c67%3A0x86d4da01e225e782!2s2267%20Frank%20Bender%20St%2C%20Orl%C3%A9ans%2C%20ON%20K1C%201M7!5e1!3m2!1sen!2sca!4v1623631456423!5m2!1sen!2sca"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="Steven's Veterinary Hospital Google Maps view"></iframe>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mt-lg-5 pt-lg-3 mt-sm-3 mt-3">
+                        <h2 class="fs-4 display-6 pb-lg-2 mt-lg-5">Store Hours</h2>
+                        <p><span class="fw-bold">Sunday:</span> 10:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Monday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Tuesday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Wednesday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Thursday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Friday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
+                            <br>
+                            <span class="fw-bold">Saturday:</span> 9:00&nbsp;AM&nbsp;-&nbsp;7:00&nbsp;PM
+                        </p>
+                        <p>Closed on holidays.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <h2 class="fs-4 display-6 pb-2 mt-lg-4 mb-lg-1 mt-sm-1 mt-1"><i
+                                class="fas fa-photo-video pe-1"></i>
+                            Social Media</h2>
+                        <a class="btn btn-secondary fs-5 my-lg-1 mx-lg-1 pt-lg-1 my-1 mx-1 pt-1" style="width: 80%;"
+                            href="https://www.facebook.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                                class="fab fa-facebook-f fa-lg pe-1"></i> Facebook</a>
                         <br>
-                        <span class="fw-bold">Monday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                        <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
+                            href="https://www.instagram.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                                class="fab fa-instagram fa-lg pe-1"></i> Instagram</a>
                         <br>
-                        <span class="fw-bold">Tuesday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                        <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
+                            href="https://www.linkedin.com/company/stevens-veterinary-hospital/" target="_blank"
+                            role="button"><i class="fab fa-linkedin-in fa-lg pe-1"></i> LinkedIn</a>
                         <br>
-                        <span class="fw-bold">Wednesday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
+                        <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
+                            href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                                class="fab fa-twitter fa-lg pe-1"></i> Twitter</a>
                         <br>
-                        <span class="fw-bold">Thursday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
+                        <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
+                            href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                                class="fab fa-youtube fa-lg pe-1"></i> YouTube</a>
                         <br>
-                        <span class="fw-bold">Friday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
-                        <br>
-                        <span class="fw-bold">Saturday:</span> 9:00&nbsp;AM&nbsp;-&nbsp;7:00&nbsp;PM
-                    </p>
-                    <p>Closed on holidays.</p>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <h2 class="fs-4 display-6 pb-2 mt-lg-4 mb-lg-1 mt-sm-1 mt-1">Social Media</h2>
-                    <a class="btn btn-secondary fs-5 my-lg-1 mx-lg-1 pt-lg-1 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.facebook.com/stevensveterinaryhospital/" target="_blank" role="button"><i class="fab fa-facebook-f fa-lg pe-1"></i> Facebook</a>
-                    <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.instagram.com/stevensveterinaryhospital/" target="_blank" role="button"><i class="fab fa-instagram fa-lg pe-1"></i> Instagram</a>
-                    <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.linkedin.com/company/stevens-veterinary-hospital/" target="_blank"
-                        role="button"><i class="fab fa-linkedin-in fa-lg pe-1"></i> LinkedIn</a>
-                    <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i class="fab fa-twitter fa-lg pe-1"></i> Twitter</a>
-                    <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i class="fab fa-youtube fa-lg pe-1"></i> YouTube</a>
-                    <br>
-                    <h2 class="fs-4 display-6 mt-lg-4 mb-lg-1 mt-sm-3 mt-3">Contact Us</h2>
-                    <address><i class="fas fa-envelope fa-lg pe-1"></i><a href="mailto:contact@stevensveterinaryhospital.ca"
-                            class="fs-6 link-info">contact@stevensveterinaryhospital.ca</a>
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-telephone" viewBox="0 0 16 16">
-                            <path
-                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                        </svg> <a href="tel:613-420-2019" class="fs-6 link-info">(613) 420-2019</a>
-                    </address>
+                        <h2 class="fs-4 display-6 mt-lg-4 mb-lg-1 mt-sm-3 mt-3"><i class="fas fa-address-card pe-1"></i>
+                            Contact Us</h2>
+                        <address><i class="fas fa-envelope fa-lg pe-1"></i><a
+                                href="mailto:contact@stevensveterinaryhospital.ca"
+                                class="fs-6 link-info">contact@stevensveterinaryhospital.ca</a>
+                            <br>
+                            <i class="fas fa-phone-alt fa-lg pe-1 pt-3"></i> <a href="tel:613-420-2019"
+                                class="fs-6 link-info">(613) 420-2019</a>
+                        </address>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            &copy; Steven's Veterinary Hospital 2021. <span class="fst-italic">Website designed by Steven Li</span>.
-            <br>
-            <a href="https://github.com/stevenli5/seg3125/blob/main/lab04/README.md#disclaimer"
-                target="_blank">Disclaimer</a>
-        </div>
-    </footer>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                &copy; Steven's Veterinary Hospital 2021. <span class="fst-italic">Website designed by Steven Li</span>.
+                <br>
+                <a href="https://github.com/stevenli5/seg3125/blob/main/lab04/README.md#disclaimer"
+                    target="_blank">Disclaimer</a>
+            </div>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- External JavaScript -->
-    <script type="text/javascript" src="scripts/lab05.js"></script>
+        <!-- External JavaScript -->
+        <script type="text/javascript" src="scripts/lab05.js"></script>
 
-    <!-- External Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+        <!-- External Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

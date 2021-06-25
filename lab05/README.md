@@ -14,6 +14,7 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 - Credit card input: https://codepen.io/stezu/pen/eghLC
 - Navbar: https://www.codeply.com/p/P0KN7DNsEq
 - - data-offset navbar: https://stackoverflow.com/questions/39588914/how-do-i-add-a-data-offset-to-a-bootstrap-4-fixed-top-responsive-navbar
+- Font Awesome icons: https://fontawesome.com/v5.15/icons
 ### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
 - - Lots of inspiration was taken from the documentation such as the cards, carousel, and form

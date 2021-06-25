@@ -13,10 +13,20 @@ img {
     color: #ff0000;
 }
 
+/* Offset Navbar */
+
 span.anchor {
     margin-top: -5rem; /* height of nav, in this case 54px */
     display: block;
     height: 5rem; /* height of nav, in this case 54px */
+    visibility: hidden;
+    position: relative;
+}
+
+span.anchorBook {
+    margin-top: -3.2rem; /* height of nav, in this case 54px */
+    display: block;
+    height: 3.2rem; /* height of nav, in this case 54px */
     visibility: hidden;
     position: relative;
 }
