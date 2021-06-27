@@ -15,6 +15,7 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 - Navbar: https://www.codeply.com/p/P0KN7DNsEq
 - - data-offset navbar: https://stackoverflow.com/questions/39588914/how-do-i-add-a-data-offset-to-a-bootstrap-4-fixed-top-responsive-navbar
 - Font Awesome icons: https://fontawesome.com/v5.15/icons
+- Input box readonly: https://stackoverflow.com/questions/4164542/how-to-disable-manual-input-for-jquery-ui-datepicker-field
 ### CSS/Bootstrap
 - Bootstrap documentation: https://getbootstrap.com/docs/5.0/
 - - Lots of inspiration was taken from the documentation such as the cards, carousel, and form
@@ -26,6 +27,8 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 - Phone number input formatting: https://stackoverflow.com/questions/27118900/auto-filling-parentheses-and-hyphen-for-phone-number-input-jquery/43750670
 - Validating regex: https://www.w3schools.com/jsref/jsref_regexp_test.asp
 - Get last two digits of year: https://stackoverflow.com/questions/17306830/how-to-get-2-digit-year-w-javascript
+- Calendar constraint: https://www.codeproject.com/Questions/876970/how-to-disable-specific-days-in-JQuery-datepicker
+- Disabling past dates: http://dotnetlearners.com/blogs/jquery-date-picker-example-to-disable-previous-dates
 ### Regular Expressions
 - Phone number regex: https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
 - Credit card regex: https://stackoverflow.com/questions/10246242/basic-regex-for-16-digit-numbers

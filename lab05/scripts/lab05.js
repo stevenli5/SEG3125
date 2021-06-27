@@ -99,6 +99,21 @@ $("input[id='ccCVV']").each(function () {
   });
 });
 
+/* Date constraints */
+
+$(function () {
+  $("#calendar").datepicker(
+    {
+      minDate: 0,
+      beforeShowDay: function (d) {
+        var day = d.getDay();
+        return [(day != 0 && day != 3)];
+      }
+    });
+});
+
+/* Validate Email */
+
 function validateEmail(input) {
   let label = document.getElementById("emailLabel");
   const em = new RegExp("[\\w\\-\\.]+@[a-zA-Z0-9]+\\.[[a-zA-Z]+");
@@ -116,6 +131,8 @@ function validateEmail(input) {
   }
 }
 
+/* Validate Phone Number */
+
 function validatePhone(input) {
   let label = document.getElementById("phoneLabel");
 
@@ -132,6 +149,8 @@ function validatePhone(input) {
   }
 }
 
+/* Validate Credit Card Number */
+
 function validateCCNumber(input) {
   let label = document.getElementById("ccNumberLabel");
 
@@ -147,6 +166,8 @@ function validateCCNumber(input) {
     document.getElementById('ccNumberTooltip').setAttribute('data-bs-original-title', 'Example: 4520 0038 3443 0402');
   }
 }
+
+/* Validate Credit Card Expiry */
 
 function validateExpiry(input) {
   let label = document.getElementById("ccExpiryLabel");
@@ -166,6 +187,8 @@ function validateExpiry(input) {
     document.getElementById('ccExpiryTooltip').setAttribute('data-bs-original-title', 'Expiry Date');
   }
 }
+
+/* Validate Credit Card CVV */
 
 function validateCVV(input) {
   let label = document.getElementById("ccCVVLabel");

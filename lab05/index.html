@@ -206,13 +206,13 @@
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="Select your preferred appointment date.">
                                 <label for="date" class="form-label mb-0 pt-0 ps-4 required">Preferred&nbsp;Date</label>
-                                <input type="date" class="pt-4 form-control" required>
+                                <input id="calendar" type="text" class="pt-4 form-control bg-white" readonly="readonly" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="Select your preferred appointment time.">
                                 <label for="time"
                                     class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3 required">Preferred&nbsp;Time</label>
-                                <input type="time" class="pt-4 form-control" required>
+                                <input id="clock" type="text" class="pt-4 form-control bg-white" required>
                             </div>
                         </div>
                         <div class="row">
@@ -756,7 +756,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-12 mt-lg-5 pt-lg-3 mt-sm-3 mt-3">
                     <h2 class="fs-4 display-6 pb-lg-2 mt-lg-5"><i class="fas fa-clock pe-1"></i> Store Hours</h2>
-                    <p><span class="fw-bold">Sunday:</span> 10:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM
+                    <p><span class="fw-bold">Sunday:</span> Closed
                         <br>
                         <span class="fw-bold">Monday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
                         <br>
@@ -768,9 +768,9 @@
                         <br>
                         <span class="fw-bold">Friday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
                         <br>
-                        <span class="fw-bold">Saturday:</span> 9:00&nbsp;AM&nbsp;-&nbsp;7:00&nbsp;PM
+                        <span class="fw-bold">Saturday:</span> Closed
                     </p>
-                    <p>Closed on holidays.</p>
+                    <p>Opened on holidays.</p>
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <h2 class="fs-4 display-6 pb-2 mt-lg-4 mb-lg-1 mt-sm-1 mt-1"><i class="fas fa-photo-video pe-1"></i>
@@ -797,7 +797,7 @@
                     <br>
                     <h2 class="fs-4 display-6 mt-lg-4 mb-lg-1 mt-sm-3 mt-3"><i class="fas fa-address-card pe-1"></i>
                         Contact Us</h2>
-                    <address><i class="fas fa-envelope fa-lg pe-1"></i><a
+                    <address><i class="fas fa-envelope fa-lg pe-1 pt-3"></i><a
                             href="mailto:contact@stevensveterinaryhospital.ca"
                             class="fs-6 link-info">contact@stevensveterinaryhospital.ca</a>
                         <br>
@@ -818,6 +818,9 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
     <!-- External JavaScript -->
     <script type="text/javascript" src="scripts/lab05.js"></script>
