@@ -127,11 +127,13 @@
                     <h2 class="fs-2 display-6 mb-3 text-center">Book an Appointment</h2>
                     <form>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Enter your first name.">
                                 <input type="fname" class="form-control" placeholder="First Name" required>
                                 <label for="fname" class="ps-4 required">First&nbsp;Name</label>
                             </div>
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Enter your last name.">
                                 <input type="lname" class="form-control" placeholder="Last Name" required>
                                 <label for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">Last&nbsp;Name</label>
                             </div>
@@ -140,18 +142,19 @@
                             <div id="emailTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
                                 data-bs-toggle="tooltip" data-bs-placement="top" title="Format: example@gmail.com">
                                 <input id="email" type="email" class="form-control" placeholder="Email Address" required
-                                    onfocusout="validateEM(this)">
+                                    onfocusout="validateEmail(this)">
                                 <label id="emailLabel" for="email" class="ps-4 required">Email Address</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                            <div id="phoneTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
                                 data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Optional - in case a change has been made to your appointment, we'll call you.">
-                                <input type="tel" class="form-control" placeholder="Phone Number">
-                                <label for="tel" class="ps-4">Phone&nbsp;Number</label>
+                                <input id="phone" type="tel" class="form-control" placeholder="Phone Number" onfocusout="validatePhone(this)">
+                                <label id="phoneLabel" for="tel" class="ps-4">Phone&nbsp;Number</label>
                             </div>
-                            <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Select your language of correspondence.">
                                 <label for="language"
                                     class="form-label mb-0 text-dark pt-0 ps-4 ps-sm-4 ps-lg-3 required">Language</label>
                                 <select class="form-select pt-4" required>
@@ -164,7 +167,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating mb-2">
+                            <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Select your required service.">
                                 <label for="service" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select
                                     a Service</label>
                                 <select class="form-select pt-4" required>
@@ -179,7 +183,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating mb-2">
+                            <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Select which expert you'd like to see.">
                                 <label for="expert" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose
                                     an Expert</label>
                                 <select class="form-select pt-4" required>
@@ -198,11 +203,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Select your preferred appointment date.">
                                 <label for="date" class="form-label mb-0 pt-0 ps-4 required">Preferred&nbsp;Date</label>
                                 <input type="date" class="pt-4 form-control" required>
                             </div>
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Select your preferred appointment time.">
                                 <label for="time"
                                     class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3 required">Preferred&nbsp;Time</label>
                                 <input type="time" class="pt-4 form-control" required>
@@ -232,17 +239,17 @@
                                     title="In the event of a last-minute cancellation, you'll be charged $50."></i></h3>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top">
+                            <div class="col-12 form-floating text-dark fw-bold mb-2" 
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Format: First&nbsp;Name&nbsp;Last&nbsp;Name Example: Adam&nbsp;Scott">
                                 <input type="text" class="form-control" placeholder="Name On Card" required>
                                 <label for="cardName" class="ps-4 required">Name&nbsp;On&nbsp;Card</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top">
-                                <input type="text" class="form-control" placeholder="Card Number" required>
-                                <label for="card" class="ps-4 required">Card&nbsp;Number</label>
+                            <div id="ccNumberTooltip" class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Example: 4520&nbsp;0038&nbsp;3443&nbsp;0402">
+                                <input id="ccNumber" type="text" class="form-control" placeholder="Card Number" required onfocusout="validateCCNumber(this)">
+                                <label id="ccNumberLabel" for="card" class="ps-4 required">Card&nbsp;Number</label>
                             </div>
                         </div>
                         <div class="row">
@@ -253,9 +260,10 @@
                                     onfocusout="validateExpiry(this)">
                                 <label id="ccExpiryLabel" for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
                             </div>
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
-                                <input type="lname" class="form-control" placeholder="CVV" required>
-                                <label for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
+                            <div id="ccCVVTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="The three digits (security code) on the back of your card. Example:&nbsp;034">
+                                <input id="ccCVV" type="lname" class="form-control" placeholder="CVV" required onfocusout="validateCVV(this)">
+                                <label id="ccCVVLabel" for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
                             </div>
                         </div>
                         <div class="row">
