@@ -145,7 +145,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Optional - in case a change has been made to your appointment, we will call you.">
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Optional - in case a change has been made to your appointment, we'll call you.">
                                 <input type="tel" class="form-control" placeholder="Phone Number">
                                 <label for="tel" class="ps-4">Phone&nbsp;Number</label>
                             </div>
@@ -243,8 +243,8 @@
                         </div>
                         <div class="row">
                             <div id="ccExpiryTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Format: MM/YY">
-                                <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date" required>
-                                <label for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
+                                <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date" required onfocusout="validateExpiry(this)">
+                                <label id="ccExpiryLabel" for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
                                 <input type="lname" class="form-control" placeholder="CVV" required>
