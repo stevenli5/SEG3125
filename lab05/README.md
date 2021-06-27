@@ -21,6 +21,15 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 - Formatting inspiration: https://ryanmatte.ca/Website/
 - Header: https://www.web-eau.net/blog/examples-header-bootstrap (example 4)
 - Footer general layout (only the layout was copied): https://mdbootstrap.com/docs/standard/navigation/footer/ (Advanced example)
+### JavaScript/jQuery
+- Tooltips/Popper: https://getbootstrap.com/docs/5.0/components/tooltips/
+- Phone number input formatting: https://stackoverflow.com/questions/27118900/auto-filling-parentheses-and-hyphen-for-phone-number-input-jquery/43750670
+- Validating regex: https://www.w3schools.com/jsref/jsref_regexp_test.asp
+- Get last two digits of year: https://stackoverflow.com/questions/17306830/how-to-get-2-digit-year-w-javascript
+### Regular Expressions
+- Phone number regex: https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
+- Credit card regex: https://stackoverflow.com/questions/10246242/basic-regex-for-16-digit-numbers
+- Email regex: https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression
 ### Images
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
 - Map and outside image: https://www.google.com/maps

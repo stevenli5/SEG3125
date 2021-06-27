@@ -137,13 +137,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2">
-                                <input type="email" class="form-control" placeholder="Email Address" required>
-                                <label for="email" class="ps-4 required">Email Address</label>
+                            <div id="emailTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Format: example@gmail.com">
+                                <input id="email" type="email" class="form-control" placeholder="Email Address" required onfocusout="validateEM(this)">
+                                <label id="emailLabel" for="email" class="ps-4 required">Email Address</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1">
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Optional - in case a change has been made to your appointment, we will call you.">
                                 <input type="tel" class="form-control" placeholder="Phone Number">
                                 <label for="tel" class="ps-4">Phone&nbsp;Number</label>
                             </div>
@@ -187,7 +189,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2">
+                            <div class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Example: German Shepard">
                                 <input type="text" class="form-control" placeholder="Animal" required>
                                 <label for="animal" class="ps-4 required">Animal&nbsp;Species</label>
                             </div>
@@ -204,7 +207,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 fw-bold mb-2">
+                            <div class="col-12 mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Example: My cat does not like other animals.">
                                 <label for="additional" class="form-label">Additional Information</label>
                                 <textarea class="form-control" rows="5" maxlength="5000"
                                     placeholder="State any relevant information we'll need to know!"></textarea>
@@ -220,16 +224,38 @@
                         </div>
                         <hr>
                         <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2">
+                            <h3 class="fs-6 display-6 mb-3 fw-bold">Payment Method <i id="paymentInfo"
+                                class="fas fa-info-circle text-primary px-1 fa-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="In the event of a last-minute cancellation, you will be charged $50."></i></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="top">
+                                <input type="text" class="form-control" placeholder="Name On Card" required>
+                                <label for="cardName" class="ps-4 required">Name&nbsp;On&nbsp;Card</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="top">
                                 <input type="text" class="form-control" placeholder="Card Number" required>
                                 <label for="card" class="ps-4 required">Card&nbsp;Number</label>
                             </div>
                         </div>
                         <div class="row">
+                            <div id="ccExpiryTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Format: MM/YY">
+                                <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date" required>
+                                <label for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1">
+                                <input type="lname" class="form-control" placeholder="CVV" required>
+                                <label for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-12 mt-1">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#success" style="width: 100%;">Book
-                                        Appointment</button>
+                                    data-bs-target="#success" style="width: 100%;">Book
+                                    Appointment</button>
                             </div>
                         </div>
                         <div class="row">
@@ -242,11 +268,12 @@
             </div>
 
             <!-- Modal for Successful Booking -->
-            <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="success" tabindex="-1" aria-labelledby="successfulBooking" aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content alert-success" style="background-color: #D1E7DD;">
                         <div class="modal-header">
-                            <h3 class="modal-title fs-4" id="exampleModalLabel"><i class="fas fa-check-circle pe-1"></i> Booking Successful!</h3>
+                            <h3 class="modal-title fs-4" id="successfulBooking"><i class="fas fa-check-circle pe-1"></i>
+                                Booking Successful!</h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -273,10 +300,6 @@
                             <p>A wide range of <a href="#services">services</a> are offered at competitive prices. Since
                                 the very beginning, Steven's Veterinary Hospital has been committed to offering
                                 excellent services at a low cost.</p>
-                            <p>Having won the <span class="fst-italic">Capital Region Best Critter Caregivers
-                                    Award</span> in 2020, the team has been expanding to accommodate for more
-                                appointment
-                                slots!</p>
                         </div>
                         <div class="col-lg-6 col-sm-12 pe-3 d-flex align-items-center">
                             <figure class="figure">
@@ -312,6 +335,9 @@
                                             $25&nbsp;-&nbsp;$175</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        If your pets’ teeth aren’t brushed regularly, it could lead to tartar accumulation.
+                                    </p>
                                     <div class="accordion" id="accordion1">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="moreDentistry">
@@ -346,6 +372,9 @@
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $50</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        Protecting your pet from getting lost or being stolen is very important.
+                                    </p>
                                     <div class="accordion" id="accordion2">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="moreMicrochipping">
@@ -360,11 +389,7 @@
                                                     <p class="card-text">
                                                         An implanted microchip with your pet's unique identification is
                                                         permanent and
-                                                        can be the difference between lost and found. For your pet’s
-                                                        protection and your
-                                                        peace of mind, we can microchip your pet using internationally
-                                                        recognized ISO
-                                                        microchips.
+                                                        can be the difference between lost and found.
                                                     </p>
                                                 </div>
                                             </div>
@@ -384,6 +409,9 @@
                                         </li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        There may be a need for your pet to be on medication.
+                                    </p>
                                     <div class="accordion" id="accordion3">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="morePharmacy">
@@ -421,6 +449,9 @@
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $35</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        It is always better to maintain good health than trying to restore health after an illness.
+                                    </p>
                                     <div class="accordion" id="accordion4">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="morePreventiveCare">
@@ -456,6 +487,9 @@
                                             $500&nbsp;-&nbsp;$1,500</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        The first, and hopefully only, surgery your pet will ever need is the spay or neuter procedure.
+                                    </p>
                                     <div class="accordion" id="accordion5">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="moreSurgery">
@@ -493,6 +527,9 @@
                                         </li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
+                                    <p class="card-text">
+                                        Vaccination is important for your pet’s health.
+                                    </p>
                                     <div class="accordion" id="accordion6">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="moreVaccination">
@@ -699,7 +736,7 @@
                             title="Steven's Veterinary Hospital Google Maps view"></iframe>
                     </div>
                     <div class="col-lg-4 col-sm-12 mt-lg-5 pt-lg-3 mt-sm-3 mt-3">
-                        <h2 class="fs-4 display-6 pb-lg-2 mt-lg-5">Store Hours</h2>
+                        <h2 class="fs-4 display-6 pb-lg-2 mt-lg-5"><i class="fas fa-clock pe-1"></i> Store Hours</h2>
                         <p><span class="fw-bold">Sunday:</span> 10:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM
                             <br>
                             <span class="fw-bold">Monday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
@@ -767,10 +804,18 @@
         <!-- External JavaScript -->
         <script type="text/javascript" src="scripts/lab05.js"></script>
 
+        <!-- Popper CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <!-- External Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
 </body>
 
 </html>
