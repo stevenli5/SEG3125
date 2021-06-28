@@ -128,19 +128,19 @@
                     <form>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Enter your first name.">
+                            data-bs-placement="left" title="Enter your first name.">
                                 <input type="fname" class="form-control" placeholder="First Name" required>
                                 <label for="fname" class="ps-4 required">First&nbsp;Name</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Enter your last name.">
+                            data-bs-placement="right" title="Enter your last name.">
                                 <input type="lname" class="form-control" placeholder="Last Name" required>
                                 <label for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">Last&nbsp;Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div id="emailTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Format: example@gmail.com">
+                                data-bs-toggle="tooltip" data-bs-placement="left" title="Format: example@gmail.com">
                                 <input id="email" type="email" class="form-control" placeholder="Email Address" required
                                     onfocusout="validateEmail(this)">
                                 <label id="emailLabel" for="email" class="ps-4 required">Email Address</label>
@@ -148,13 +148,13 @@
                         </div>
                         <div class="row">
                             <div id="phoneTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
-                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-toggle="tooltip" data-bs-placement="left"
                                 title="Optional - in case a change has been made to your appointment, we'll call you.">
                                 <input id="phone" type="tel" class="form-control" placeholder="Phone Number" onfocusout="validatePhone(this)">
                                 <label id="phoneLabel" for="tel" class="ps-4">Phone&nbsp;Number</label>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Select your language of correspondence.">
+                            data-bs-placement="right" title="Select your language of correspondence.">
                                 <label for="language"
                                     class="form-label mb-0 text-dark pt-0 ps-4 ps-sm-4 ps-lg-3 required">Language</label>
                                 <select class="form-select pt-4" required>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Select your required service.">
+                            data-bs-placement="left" title="Select your required service.">
                                 <label for="service" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select
                                     a Service</label>
                                 <select class="form-select pt-4" required>
@@ -184,10 +184,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Select which expert you'd like to see.">
+                            data-bs-placement="left" title="Select which expert you'd like to see.">
                                 <label for="expert" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose
                                     an Expert</label>
-                                <select class="form-select pt-4" required>
+                                <select id="expert" class="form-select pt-4" required>
                                     <option value="any">Any</option>
                                     <option value="steven">Steven Li</option>
                                     <option value="abrar">Abrar Arif</option>
@@ -197,26 +197,26 @@
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Example: German Shepard">
+                                data-bs-placement="left" title="Example: German Shepard">
                                 <input type="text" class="form-control" placeholder="Animal" required>
                                 <label for="animal" class="ps-4 required">Animal&nbsp;Species</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Select your preferred appointment date.">
+                            data-bs-placement="left" title="Select your preferred appointment date.">
                                 <label for="date" class="form-label mb-0 pt-0 ps-4 required">Preferred&nbsp;Date</label>
                                 <input id="calendar" type="text" class="pt-4 form-control bg-white" readonly="readonly" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Select your preferred appointment time.">
+                            data-bs-placement="right" title="Select your preferred appointment time.">
                                 <label for="time"
                                     class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3 required">Preferred&nbsp;Time</label>
-                                <input id="clock" type="text" class="pt-4 form-control bg-white" required>
+                                <input id="clock" type="text" class="pt-4 form-control bg-white" readonly="readonly" required>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 mb-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                            <div class="col-12 mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
                                 title="Example: My cat does not like other animals.">
                                 <label for="additional" class="form-label">Additional Information</label>
                                 <textarea class="form-control" rows="5" maxlength="5000"
@@ -235,19 +235,19 @@
                         <div class="row">
                             <h3 class="fs-6 display-6 mb-3 fw-bold">Payment Method <i id="paymentInfo"
                                     class="fas fa-info-circle text-primary px-1 fa-lg" data-bs-toggle="tooltip"
-                                    data-bs-placement="top"
+                                    data-bs-placement="left"
                                     title="In the event of a last-minute cancellation, you'll be charged $50."></i></h3>
                         </div>
                         <div class="row">
                             <div class="col-12 form-floating text-dark fw-bold mb-2" 
-                            data-bs-toggle="tooltip" data-bs-placement="top" title="Format: First&nbsp;Name&nbsp;Last&nbsp;Name Example: Adam&nbsp;Scott">
+                            data-bs-toggle="tooltip" data-bs-placement="left" title="Format: First&nbsp;Name&nbsp;Last&nbsp;Name Example: Adam&nbsp;Scott">
                                 <input type="text" class="form-control" placeholder="Name On Card" required>
                                 <label for="cardName" class="ps-4 required">Name&nbsp;On&nbsp;Card</label>
                             </div>
                         </div>
                         <div class="row">
                             <div id="ccNumberTooltip" class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Example: 4520&nbsp;0038&nbsp;3443&nbsp;0402">
+                                data-bs-placement="left" title="Example: 4520&nbsp;0038&nbsp;3443&nbsp;0402">
                                 <input id="ccNumber" type="text" class="form-control" placeholder="Card Number" required onfocusout="validateCCNumber(this)">
                                 <label id="ccNumberLabel" for="card" class="ps-4 required">Card&nbsp;Number</label>
                             </div>
@@ -255,13 +255,13 @@
                         <div class="row">
                             <div id="ccExpiryTooltip"
                                 class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Format: MM/YY">
+                                data-bs-toggle="tooltip" data-bs-placement="left" title="Format: MM/YY">
                                 <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date" required
                                     onfocusout="validateExpiry(this)">
                                 <label id="ccExpiryLabel" for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
                             </div>
                             <div id="ccCVVTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="The three digits (security code) on the back of your card. Example:&nbsp;034">
+                            data-bs-placement="right" title="The three digits (security code) on the back of your card. Example:&nbsp;034">
                                 <input id="ccCVV" type="lname" class="form-control" placeholder="CVV" required onfocusout="validateCVV(this)">
                                 <label id="ccCVVLabel" for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
                             </div>
@@ -348,6 +348,8 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold ">Price Range:</span>
                                             $25&nbsp;-&nbsp;$175</li>
+                                            <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                                30&nbsp;-&nbsp;60 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -386,6 +388,8 @@
                                     <h3 class="card-title fs-5">Microchipping</h3>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $50</li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            5&nbsp;-&nbsp;15 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -423,6 +427,8 @@
                                         <li class="list-group-item"><span class="fw-bold">Price Range:</span>
                                             $10&nbsp;-&nbsp;$100
                                         </li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            5&nbsp;-&nbsp;30 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -463,6 +469,8 @@
                                     <h3 class="card-title fs-5">Preventive care</h3>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold">Price:</span> $35</li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            30&nbsp;-&nbsp;90 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -502,6 +510,8 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold">Price Range:</span>
                                             $500&nbsp;-&nbsp;$1,500</li>
+                                            <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                                30&nbsp;-&nbsp;120 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -543,6 +553,8 @@
                                         <li class="list-group-item"><span class="fw-bold">Price Range:</span>
                                             $5&nbsp;-&nbsp;$10
                                         </li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            5&nbsp;-&nbsp;15 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -594,6 +606,12 @@
                                         <h4 class="fs-6">Doctor of Veterinary Medicine</h4>
                                         <div class="accordion" id="accordionSteven">
                                             <div class="accordion-item">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                        Monday, Tuesday, Thursday, Friday
+                                                    </li>
+                                                </ul>
+                                                <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                                 <h2 class="accordion-header" id="moreSteven">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseSteven">
@@ -641,6 +659,12 @@
                                         <h4 class="fs-6">Veterinary Technician</h4>
                                         <div class="accordion" id="accordionAbrar">
                                             <div class="accordion-item">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                        Monday, Wednesday, Thursday
+                                                    </li>
+                                                </ul>
+                                                <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                                 <h2 class="accordion-header" id="moreAbrar">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseAbrar">
@@ -692,6 +716,12 @@
                                         <h4 class="fs-6">Veterinary Technician</h4>
                                         <div class="accordion" id="accordionAndrew">
                                             <div class="accordion-item">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                        Tuesday, Wednesday, Friday
+                                                    </li>
+                                                </ul>
+                                                <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                                 <h2 class="accordion-header" id="moreAndrew">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseAndrew">
@@ -762,11 +792,11 @@
                         <br>
                         <span class="fw-bold">Tuesday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
                         <br>
-                        <span class="fw-bold">Wednesday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
+                        <span class="fw-bold">Wednesday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
                         <br>
                         <span class="fw-bold">Thursday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
                         <br>
-                        <span class="fw-bold">Friday:</span> 7:00&nbsp;AM&nbsp;-&nbsp;8:00&nbsp;PM
+                        <span class="fw-bold">Friday:</span> 8:00&nbsp;AM&nbsp;-&nbsp;10:00&nbsp;PM
                         <br>
                         <span class="fw-bold">Saturday:</span> Closed
                     </p>
@@ -817,10 +847,14 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
     <!-- External JavaScript -->
     <script type="text/javascript" src="scripts/lab05.js"></script>

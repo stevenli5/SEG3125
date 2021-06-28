@@ -99,17 +99,41 @@ $("input[id='ccCVV']").each(function () {
   });
 });
 
-/* Date constraints */
+/* Date picker */
 
 $(function () {
   $("#calendar").datepicker(
     {
       minDate: 0,
       beforeShowDay: function (d) {
-        var day = d.getDay();
-        return [(day != 0 && day != 3)];
+        let expert = document.getElementById("expert").value;
+        let day = d.getDay();
+        if (expert === "steven") {
+          return [(day != 0 && day != 3 && day != 6)];
+        } else if (expert === "abrar") {
+          return [(day != 0 && day != 2 && day != 5 && day != 6)];
+        } else if (expert === "andrew") {
+          return [(day != 0 && day != 1 && day != 4 && day != 6)];
+        } else {
+          return [(day != 0 && day != 6)];
+        }
       }
     });
+});
+
+/* Time picker */
+
+$(function () {
+  $('#clock').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 30,
+    minTime: '10:00am',
+    maxTime: '6:00pm',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+  });
 });
 
 /* Validate Email */
