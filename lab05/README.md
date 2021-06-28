@@ -29,10 +29,7 @@ This web page consists of both lab 5 and lab 6. Lab 6 will consist of the final 
 - Get last two digits of year: https://stackoverflow.com/questions/17306830/how-to-get-2-digit-year-w-javascript
 - Calendar constraint: https://www.codeproject.com/Questions/876970/how-to-disable-specific-days-in-JQuery-datepicker
 - Disabling past dates: http://dotnetlearners.com/blogs/jquery-date-picker-example-to-disable-previous-dates
-### Regular Expressions
-- Phone number regex: https://stackoverflow.com/questions/18091324/regex-to-match-all-us-phone-number-formats
-- Credit card regex: https://stackoverflow.com/questions/10246242/basic-regex-for-16-digit-numbers
-- Email regex: https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression
+- Check if expert has changed: https://stackoverflow.com/questions/17495629/using-jquery-to-see-if-a-drop-down-menu-select-has-changed
 ### Images
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
 - Map and outside image: https://www.google.com/maps

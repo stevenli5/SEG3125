@@ -127,14 +127,62 @@ $(function () {
   $('#clock').timepicker({
     timeFormat: 'h:mm p',
     interval: 30,
-    minTime: '10:00am',
-    maxTime: '6:00pm',
-    startTime: '10:00',
+    minTime: '8:00am',
+    maxTime: '10:00pm',
+    startTime: '8:00',
     dynamic: false,
     dropdown: true,
     scrollbar: true
   });
 });
+
+/* Reset date picker if expert changes */
+
+$(function () {
+  $("#expert").on('change', function () {
+    document.getElementById("calendar").value = null;
+  });
+});
+
+/* Reset time picker if expert changes */
+
+$(function () {
+  $("#expert").on('change', function () {
+    document.getElementById("clock").value = null;
+  });
+});
+
+/* Validate First Name */
+
+function validateFirst(input) {
+  let label = document.getElementById("firstLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> First Name';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'First Name';
+    return true;
+  }
+}
+
+/* Validate Last Name */
+
+function validateLast(input) {
+  let label = document.getElementById("lastLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Last Name';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'Last Name';
+    return true;
+  }
+}
 
 /* Validate Email */
 
@@ -147,11 +195,13 @@ function validateEmail(input) {
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Email Address';
     document.getElementById('emailTooltip').setAttribute('title', 'Invalid email address. Format: example@domain.com Example: adam@hotmail.com');
     document.getElementById('emailTooltip').setAttribute('data-bs-original-title', 'Invalid email address. Format: example@domain.com Example: adam@hotmail.com');
+    return false;
   } else {
     input.classList.remove("error");
     label.innerHTML = 'Email Address';
     document.getElementById('emailTooltip').setAttribute('title', 'Email Address');
     document.getElementById('emailTooltip').setAttribute('data-bs-original-title', 'Email Address');
+    return true;
   }
 }
 
@@ -165,11 +215,77 @@ function validatePhone(input) {
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Phone&nbsp;Number';
     document.getElementById('phoneTooltip').setAttribute('title', 'Invalid phone number. Optional - in case a change has been made to your appointment, we\'ll call you. Example: (613) 034-8888');
     document.getElementById('phoneTooltip').setAttribute('data-bs-original-title', 'Invalid phone number. Optional - in case a change has been made to your appointment, we\'ll call you. Example: (613) 034-8888');
+    return false;
   } else {
     input.classList.remove("error");
     label.innerHTML = 'Phone&nbsp;Number';
     document.getElementById('phoneTooltip').setAttribute('title', 'Optional - in case a change has been made to your appointment, we\'ll call you.');
     document.getElementById('phoneTooltip').setAttribute('data-bs-original-title', 'Optional - in case a change has been made to your appointment, we\'ll call you.');
+    return true;
+  }
+}
+
+/* Validate Language */
+
+function validateLanguage(input) {
+  let label = document.getElementById("languageLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Language';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'Language';
+    return true;
+  }
+}
+
+/* Validate Service */
+
+function validateService(input) {
+  let label = document.getElementById("serviceLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Select a Service';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'Select a Service';
+    return true;
+  }
+}
+
+/* Validate Animal */
+
+function validateAnimal(input) {
+  let label = document.getElementById("animalLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Animal&nbsp;Species';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'Animal&nbsp;Species';
+    return true;
+  }
+}
+
+/* Validate Credit Card Name */
+
+function validateName(input) {
+  let label = document.getElementById("nameLabel");
+
+  if (input.value.length == 0) {
+    input.classList.add("error");
+    label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Name&nbsp;on&nbsp;Card';
+    return false;
+  } else {
+    input.classList.remove("error");
+    label.innerHTML = 'Name&nbsp;on&nbsp;Card';
+    return true;
   }
 }
 
@@ -183,11 +299,13 @@ function validateCCNumber(input) {
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Card Number';
     document.getElementById('ccNumberTooltip').setAttribute('title', 'Invalid card number. Example: 4520 0038 3443 0402');
     document.getElementById('ccNumberTooltip').setAttribute('data-bs-original-title', 'Invalid card number. Example: 4520 0038 3443 0402');
+    return false;
   } else {
     input.classList.remove("error");
     label.innerHTML = 'Card Number';
     document.getElementById('ccNumberTooltip').setAttribute('title', 'Example: 4520 0038 3443 0402');
     document.getElementById('ccNumberTooltip').setAttribute('data-bs-original-title', 'Example: 4520 0038 3443 0402');
+    return true;
   }
 }
 
@@ -204,11 +322,13 @@ function validateExpiry(input) {
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Expiry Date';
     document.getElementById('ccExpiryTooltip').setAttribute('title', 'Invalid date. Format: MM/YY Example: 04/25');
     document.getElementById('ccExpiryTooltip').setAttribute('data-bs-original-title', 'Invalid date. Format: MM/YY Example: 04/25');
+    return false;
   } else {
     input.classList.remove("error");
     label.innerHTML = 'Expiry Date';
     document.getElementById('ccExpiryTooltip').setAttribute('title', 'Expiry Date');
     document.getElementById('ccExpiryTooltip').setAttribute('data-bs-original-title', 'Expiry Date');
+    return true;
   }
 }
 
@@ -222,16 +342,66 @@ function validateCVV(input) {
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> CVV';
     document.getElementById('ccCVVTooltip').setAttribute('title', 'Invalid CVV. Enter the three digits (security code) on the back of your card. Example: 034');
     document.getElementById('ccCVVTooltip').setAttribute('data-bs-original-title', 'Invalid CVV. Enter the three digits (security code) on the back of your card. Example: 034');
+    return false;
   } else {
     input.classList.remove("error");
     label.innerHTML = 'CVV';
     document.getElementById('ccCVVTooltip').setAttribute('title', 'The three digits (security code) on the back of your card. Example: 034');
     document.getElementById('ccCVVTooltip').setAttribute('data-bs-original-title', 'The three digits (security code) on the back of your card. Example: 034');
+    return true;
   }
 }
 
 function validate() {
-  const pn = new RegExp("\\(?\\d{3}\\)?-? *\\d{3}-? *-?\\d{4}");
-  const cc = new RegExp("\\b\\d{4}[ -]?\\d{4}[ -]?\\d{4}[ -]?\\d{4}\\b");
-  const em = new RegExp("[\\w\\-\\.]+@[a-zA-Z0-9]+\\.[[a-zA-Z]+");
+  let firstName = document.getElementById("fname");
+  let lastName = document.getElementById("lname");
+  let email = document.getElementById("email");
+  let phone = document.getElementById("phone");
+  let language = document.getElementById("language");
+  let service = document.getElementById("service");
+  let animal = document.getElementById("animal");
+  let ccName = document.getElementById("cardName");
+  let ccNumber = document.getElementById("ccNumber");
+  let ccExpiry = document.getElementById("ccExpiry");
+  let ccCVV = document.getElementById("ccCVV");
+  let valid = true;
+
+  if (!validateFirst(firstName)) {
+    valid = false;
+  }
+  if (!validateLast(lastName)) {
+    valid = false;
+  }
+  if (!validateEmail(email)) {
+    valid = false;
+  }
+  if (!validatePhone(phone)) {
+    valid = false;
+  }
+  if (!validateLanguage(language)) {
+    valid = false;
+  }
+  if (!validateService(service)) {
+    valid = false;
+  }
+  if (!validateAnimal(animal)) {
+    valid = false;
+  }
+  if (!validateName(ccName)) {
+    valid = false;
+  }
+  if (!validateCCNumber(ccNumber)) {
+    valid = false;
+  }
+  if (!validateExpiry(ccExpiry)) {
+    valid = false;
+  }
+  if (!validateCVV(ccCVV)) {
+    valid = false;
+  }
+
+  if (valid) {
+    document.getElementById("booked").click();
+  }
+
 }
