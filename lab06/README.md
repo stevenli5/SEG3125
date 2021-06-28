@@ -31,6 +31,7 @@ This web page displays the final version of lab 5/6.
 - Get last two digits of year: https://stackoverflow.com/questions/17306830/how-to-get-2-digit-year-w-javascript
 - Calendar constraint: https://www.codeproject.com/Questions/876970/how-to-disable-specific-days-in-JQuery-datepicker
 - Disabling past dates: http://dotnetlearners.com/blogs/jquery-date-picker-example-to-disable-previous-dates
+- Time picker: https://timepicker.co/
 - Check if expert has changed: https://stackoverflow.com/questions/17495629/using-jquery-to-see-if-a-drop-down-menu-select-has-changed
 ### Images
 - Logo/Favicon: https://www.designfreelogoonline.com/logoshop/veterinarian-logo-design-free-veterinary-logo-maker/
