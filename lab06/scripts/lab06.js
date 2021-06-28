@@ -128,7 +128,7 @@ $(function () {
     timeFormat: 'h:mm p',
     interval: 30,
     minTime: '8:00am',
-    maxTime: '10:00pm',
+    maxTime: '9:30pm',
     startTime: '8:00',
     dynamic: false,
     dropdown: true,
