@@ -28,7 +28,8 @@
             </button>
             <div class="collapse navbar-collapse text-center" id="hamburger">
                 <ul class="navbar-nav fs-4">
-                    <li class="nav-item active" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+                    <li class="nav-item active"
+                        style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">
                         <a class="nav-link text-white px-4" href="#about"><i class="fas fa-question-circle pe-1"></i>
                             About Us</a>
                     </li>
@@ -125,159 +126,173 @@
                 <span class="anchorBook" id="book"></span>
                 <div class="bg-dark my-3 p-2">
                     <h2 class="fs-2 display-6 mb-3 text-center">Book an Appointment</h2>
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="left" title="Enter your first name.">
-                                <input id="fname" type="fname" class="form-control" placeholder="First Name" onfocusout="validateFirst(this)">
-                                <label id="firstLabel" for="fname" class="ps-4 required">First&nbsp;Name</label>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="right" title="Enter your last name.">
-                                <input id="lname" type="lname" class="form-control" placeholder="Last Name" onfocusout="validateLast(this)">
-                                <label id="lastLabel" for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">Last&nbsp;Name</label>
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="left" title="Enter your first name.">
+                            <input id="fname" type="fname" class="form-control" placeholder="First Name"
+                                onfocusout="validateFirst(this)">
+                            <label id="firstLabel" for="fname" class="ps-4 required">First&nbsp;Name</label>
                         </div>
-                        <div class="row">
-                            <div id="emailTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
-                                data-bs-toggle="tooltip" data-bs-placement="left" title="Format: example@gmail.com">
-                                <input id="email" type="email" class="form-control" placeholder="Email Address"
-                                    onfocusout="validateEmail(this)">
-                                <label id="emailLabel" for="email" class="ps-4 required">Email Address</label>
-                            </div>
+                        <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="right" title="Enter your last name.">
+                            <input id="lname" type="lname" class="form-control" placeholder="Last Name"
+                                onfocusout="validateLast(this)">
+                            <label id="lastLabel" for="lname"
+                                class="ps-4 ps-sm-4 ps-lg-3 required">Last&nbsp;Name</label>
                         </div>
-                        <div class="row">
-                            <div id="phoneTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
-                                data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Optional - in case a change has been made to your appointment, we'll call you.">
-                                <input id="phone" type="tel" class="form-control" placeholder="Phone Number" onfocusout="validatePhone(this)">
-                                <label id="phoneLabel" for="tel" class="ps-4">Phone&nbsp;Number</label>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
+                    </div>
+                    <div class="row">
+                        <div id="emailTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="left" title="Format: example@gmail.com">
+                            <input id="email" type="email" class="form-control" placeholder="Email Address"
+                                onfocusout="validateEmail(this)">
+                            <label id="emailLabel" for="email" class="ps-4 required">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="phoneTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Optional - in case a change has been made to your appointment, we'll call you.">
+                            <input id="phone" type="tel" class="form-control" placeholder="Phone Number"
+                                onfocusout="validatePhone(this)">
+                            <label id="phoneLabel" for="tel" class="ps-4">Phone&nbsp;Number</label>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 form-floating fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
                             data-bs-placement="right" title="Select your language of correspondence.">
-                                <label id="languageLabel" for="language"
-                                    class="form-label mb-0 text-dark pt-0 ps-4 ps-sm-4 ps-lg-3 required">Language</label>
-                                <select id="language" class="form-select pt-4" onfocusout="validateLanguage(this)">
-                                    <option value selected disabled>Select one</option>
-                                    <option value="eng">English</option>
-                                    <option value="fra">French</option>
-                                    <option value="both">English or French</option>
-                                    <option value="other">Other (specify in Additional Information)</option>
-                                </select>
-                            </div>
+                            <label id="languageLabel" for="language"
+                                class="form-label mb-0 text-dark pt-0 ps-4 ps-sm-4 ps-lg-3 required">Language</label>
+                            <select id="language" class="form-select pt-4" onfocusout="validateLanguage(this)">
+                                <option value selected disabled>Select one</option>
+                                <option value="eng">English</option>
+                                <option value="fra">French</option>
+                                <option value="both">English or French</option>
+                                <option value="other">Other (specify in Additional Information)</option>
+                            </select>
                         </div>
-                        <div class="row">
-                            <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
-                            data-bs-placement="left" title="Select your required service.">
-                                <label id="serviceLabel" for="service" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select
-                                    a Service</label>
-                                <select id="service" class="form-select pt-4" onfocusout="validateService(this)">
-                                    <option value selected disabled>Select one</option>
-                                    <option value="dentistry">Dentistry</option>
-                                    <option value="diagnostics">Microchipping</option>
-                                    <option value="medicalTreatment">Pharmacy</option>
-                                    <option value="orthopedicSurgery">Preventive care</option>
-                                    <option value="surgery">Surgery</option>
-                                    <option value="vaccination">Vaccination</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Select your required service.">
+                            <label id="serviceLabel" for="service"
+                                class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Select
+                                a Service</label>
+                            <select id="service" class="form-select pt-4" onfocusout="validateService(this)">
+                                <option value selected disabled>Select one</option>
+                                <option value="dentistry">Dentistry</option>
+                                <option value="diagnostics">Microchipping</option>
+                                <option value="medicalTreatment">Pharmacy</option>
+                                <option value="orthopedicSurgery">Preventive care</option>
+                                <option value="surgery">Surgery</option>
+                                <option value="vaccination">Vaccination</option>
+                            </select>
                         </div>
-                        <div class="row">
-                            <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip"
-                            data-bs-placement="left" title="Select which expert you'd like to see.">
-                                <label for="expert" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose
-                                    an Expert</label>
-                                <select id="expert" class="form-select pt-4">
-                                    <option value="any">Any</option>
-                                    <option value="steven">Steven Li</option>
-                                    <option value="abrar">Abrar Arif</option>
-                                    <option value="andrew">Andrew Lau</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-floating mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Select which expert you'd like to see.">
+                            <label for="expert" class="form-label mb-0 text-dark pt-0 ps-4 fw-bold required">Choose
+                                an Expert</label>
+                            <select id="expert" class="form-select pt-4">
+                                <option value="any">Any</option>
+                                <option value="steven">Steven Li</option>
+                                <option value="abrar">Abrar Arif</option>
+                                <option value="andrew">Andrew Lau</option>
+                            </select>
                         </div>
-                        <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="left" title="Example: German Shepard">
-                                <input id="animal" type="text" class="form-control" placeholder="Animal" onfocusout="validateAnimal(this)">
-                                <label id="animalLabel" for="animal" class="ps-4 required">Animal&nbsp;Species</label>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
+                            data-bs-placement="left" title="Example: German Shepard">
+                            <input id="animal" type="text" class="form-control" placeholder="Animal"
+                                onfocusout="validateAnimal(this)">
+                            <label id="animalLabel" for="animal" class="ps-4 required">Animal&nbsp;Species</label>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="left" title="Select your preferred appointment date. If no date is selected, we'll contact you.">
-                                <label for="date" class="form-label mb-0 pt-0 ps-4">Preferred&nbsp;Date</label>
-                                <input id="calendar" type="text" class="pt-4 form-control bg-white" readonly="readonly">
-                            </div>
-                            <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="right" title="Select your preferred appointment time. If no time is selected, we'll contact you.">
-                                <label for="time"
-                                    class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3">Preferred&nbsp;Time</label>
-                                <input id="clock" type="text" class="pt-4 form-control bg-white" readonly="readonly">
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Select your preferred appointment date. If no date is selected, we'll contact you.">
+                            <label for="date" class="form-label mb-0 pt-0 ps-4">Preferred&nbsp;Date</label>
+                            <input id="calendar" type="text" class="pt-4 form-control bg-white" readonly="readonly">
                         </div>
-                        <div class="row">
-                            <div class="col-12 mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Example: My cat does not like other animals.">
-                                <label for="additional" class="form-label">Additional Information</label>
-                                <textarea class="form-control" rows="5" maxlength="5000"
-                                    placeholder="State any relevant information we'll need to know!"></textarea>
-                            </div>
+                        <div class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Select your preferred appointment time. If no time is selected, we'll contact you.">
+                            <label for="time"
+                                class="form-label mb-0 pt-0 ps-4 ps-sm-4 ps-lg-3">Preferred&nbsp;Time</label>
+                            <input id="clock" type="text" class="pt-4 form-control bg-white" readonly="readonly">
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <input class="form-check-input" type="checkbox" value="firstTime">
-                                <label class="form-check-label" for="firstTime">
-                                    This is my first time booking an appointment.
-                                </label>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-2" data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Example: My cat does not like other animals.">
+                            <label for="additional" class="form-label">Additional Information</label>
+                            <textarea class="form-control" rows="5" maxlength="5000"
+                                placeholder="State any relevant information we'll need to know!"></textarea>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <h3 class="fs-6 display-6 mb-3 fw-bold">Payment Method <i id="paymentInfo"
-                                    class="fas fa-info-circle text-primary px-1 fa-lg" data-bs-toggle="tooltip"
-                                    data-bs-placement="left"
-                                    title="In the event of a last-minute cancellation, you'll be charged $50."></i></h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-check-input" type="checkbox" value="firstTime">
+                            <label class="form-check-label" for="firstTime">
+                                This is my first time booking an appointment.
+                            </label>
                         </div>
-                        <div class="row">
-                            <div class="col-12 form-floating text-dark fw-bold mb-2" 
-                            data-bs-toggle="tooltip" data-bs-placement="left" title="Format: First&nbsp;Name&nbsp;Last&nbsp;Name Example: Adam&nbsp;Scott">
-                                <input id="cardName" type="text" class="form-control" placeholder="Name On Card" onfocusout="validateName(this)">
-                                <label id="nameLabel" for="cardName" class="ps-4 required">Name&nbsp;On&nbsp;Card</label>
-                            </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h3 class="fs-6 display-6 mb-3 fw-bold">Payment Method <i id="paymentInfo"
+                                class="fas fa-info-circle text-primary px-1 fa-lg" data-bs-toggle="tooltip"
+                                data-bs-placement="left"
+                                title="In the event of a last-minute cancellation, you'll be charged $50."></i></h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
+                            data-bs-placement="left"
+                            title="Format: First&nbsp;Name&nbsp;Last&nbsp;Name Example: Adam&nbsp;Scott">
+                            <input id="cardName" type="text" class="form-control" placeholder="Name On Card"
+                                onfocusout="validateName(this)">
+                            <label id="nameLabel" for="cardName" class="ps-4 required">Name&nbsp;On&nbsp;Card</label>
                         </div>
-                        <div class="row">
-                            <div id="ccNumberTooltip" class="col-12 form-floating text-dark fw-bold mb-2" data-bs-toggle="tooltip"
-                                data-bs-placement="left" title="Example: 4520&nbsp;0038&nbsp;3443&nbsp;0402">
-                                <input id="ccNumber" type="text" class="form-control" placeholder="Card Number" onfocusout="validateCCNumber(this)">
-                                <label id="ccNumberLabel" for="card" class="ps-4 required">Card&nbsp;Number</label>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div id="ccNumberTooltip" class="col-12 form-floating text-dark fw-bold mb-2"
+                            data-bs-toggle="tooltip" data-bs-placement="left"
+                            title="Example: 4520&nbsp;0038&nbsp;3443&nbsp;0402">
+                            <input id="ccNumber" type="text" class="form-control" placeholder="Card Number"
+                                onfocusout="validateCCNumber(this)">
+                            <label id="ccNumberLabel" for="card" class="ps-4 required">Card&nbsp;Number</label>
                         </div>
-                        <div class="row">
-                            <div id="ccExpiryTooltip"
-                                class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
-                                data-bs-toggle="tooltip" data-bs-placement="left" title="Format: MM/YY">
-                                <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date"
-                                    onfocusout="validateExpiry(this)">
-                                <label id="ccExpiryLabel" for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
-                            </div>
-                            <div id="ccCVVTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1" data-bs-toggle="tooltip"
-                            data-bs-placement="right" title="The three digits (security code) on the back of your card. Example:&nbsp;034">
-                                <input id="ccCVV" type="lname" class="form-control" placeholder="CVV" onfocusout="validateCVV(this)">
-                                <label id="ccCVVLabel" for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div id="ccExpiryTooltip"
+                            class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 pe-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="left" title="Format: MM/YY">
+                            <input id="ccExpiry" type="text" class="form-control" placeholder="Expiry Date"
+                                onfocusout="validateExpiry(this)">
+                            <label id="ccExpiryLabel" for="fname" class="ps-4 required">Expiry&nbsp;Date</label>
                         </div>
-                        <div class="row">
-                            <div class="col-12 mt-1">
-                                <button type="button" class="btn btn-primary" style="width: 100%;" onclick="validate()">Book
-                                    Appointment</button>
-                                    <button id="booked" data-bs-toggle="modal"
-                                    data-bs-target="#success" style="display: none;"></button>
-                            </div>
+                        <div id="ccCVVTooltip" class="col-lg-6 col-sm-12 form-floating text-dark fw-bold mb-2 ps-lg-1"
+                            data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="The three digits (security code) on the back of your card. Example:&nbsp;034">
+                            <input id="ccCVV" type="lname" class="form-control" placeholder="CVV"
+                                onfocusout="validateCVV(this)">
+                            <label id="ccCVVLabel" for="lname" class="ps-4 ps-sm-4 ps-lg-3 required">CVV</label>
                         </div>
-                        <div class="row">
-                            <div class="col-12 mt-2">
-                                <p><span class="required"></span> Required</p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-1">
+                            <button type="button" class="btn btn-primary" style="width: 100%;" onclick="validate()">Book
+                                Appointment</button>
+                            <button id="booked" data-bs-toggle="modal" data-bs-target="#success"
+                                style="display: none;"></button>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-2">
+                            <p><span class="required"></span> Required</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -347,8 +362,8 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold ">Price Range:</span>
                                             $25&nbsp;-&nbsp;$175</li>
-                                            <li class="list-group-item"><span class="fw-bold ">Duration:</span>
-                                                30&nbsp;-&nbsp;60 minutes</li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            30&nbsp;-&nbsp;60 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -509,8 +524,8 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><span class="fw-bold">Price Range:</span>
                                             $500&nbsp;-&nbsp;$1,500</li>
-                                            <li class="list-group-item"><span class="fw-bold ">Duration:</span>
-                                                30&nbsp;-&nbsp;120 minutes</li>
+                                        <li class="list-group-item"><span class="fw-bold ">Duration:</span>
+                                            30&nbsp;-&nbsp;120 minutes</li>
                                     </ul>
                                     <div class="list-group bg-dark mb-2" style="height: 0.1rem;"></div>
                                     <p class="card-text">
@@ -606,7 +621,8 @@
                                         <div class="accordion" id="accordionSteven">
                                             <div class="accordion-item">
                                                 <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                    <li class="list-group-item"><span
+                                                            class="fw-bold">Availability:</span>
                                                         Monday, Tuesday, Thursday, Friday
                                                     </li>
                                                 </ul>
@@ -659,7 +675,8 @@
                                         <div class="accordion" id="accordionAbrar">
                                             <div class="accordion-item">
                                                 <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                    <li class="list-group-item"><span
+                                                            class="fw-bold">Availability:</span>
                                                         Monday, Wednesday, Thursday
                                                     </li>
                                                 </ul>
@@ -716,7 +733,8 @@
                                         <div class="accordion" id="accordionAndrew">
                                             <div class="accordion-item">
                                                 <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item"><span class="fw-bold">Availability:</span>
+                                                    <li class="list-group-item"><span
+                                                            class="fw-bold">Availability:</span>
                                                         Tuesday, Wednesday, Friday
                                                     </li>
                                                 </ul>
@@ -805,23 +823,18 @@
                     <h2 class="fs-4 display-6 pb-2 mt-lg-4 mb-lg-1 mt-sm-1 mt-1"><i class="fas fa-photo-video pe-1"></i>
                         Social Media</h2>
                     <a class="btn btn-secondary fs-5 my-lg-1 mx-lg-1 pt-lg-1 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.facebook.com/stevensveterinaryhospital/" target="_blank" role="button"><i
-                            class="fab fa-facebook-f fa-lg pe-1"></i> Facebook</a>
+                        href="#" role="button"><i class="fab fa-facebook-f fa-lg pe-1"></i> Facebook</a>
                     <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.instagram.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;" href="#" role="button"><i
                             class="fab fa-instagram fa-lg pe-1"></i> Instagram</a>
                     <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://www.linkedin.com/company/stevens-veterinary-hospital/" target="_blank"
-                        role="button"><i class="fab fa-linkedin-in fa-lg pe-1"></i> LinkedIn</a>
+                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;" href="#" role="button"><i
+                            class="fab fa-linkedin-in fa-lg pe-1"></i> LinkedIn</a>
                     <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;" href="#" role="button"><i
                             class="fab fa-twitter fa-lg pe-1"></i> Twitter</a>
                     <br>
-                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;"
-                        href="https://twitter.com/stevensveterinaryhospital/" target="_blank" role="button"><i
+                    <a class="btn btn-secondary fs-5 my-1 mx-1 pt-1" style="width: 80%;" href="#" role="button"><i
                             class="fab fa-youtube fa-lg pe-1"></i> YouTube</a>
                     <br>
                     <h2 class="fs-4 display-6 mt-lg-4 mb-lg-1 mt-sm-3 mt-3"><i class="fas fa-address-card pe-1"></i>
@@ -847,7 +860,8 @@
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
