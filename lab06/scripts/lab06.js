@@ -317,7 +317,7 @@ function validateExpiry(input) {
   let currMonth = date.getMonth();
   let currYear = date.getFullYear().toString().substr(-2);
 
-  if (((input.value.length === 0) || (input.value.length === 5)) && ((input.value.substr(0, 2) > 12) || ((currYear > input.value.substr(3, 2)) || ((currYear === input.value.substr(3, 2)) && ((currMonth >= input.value.substr(0, 2))))))) {
+  if (((input.value.length < 5) || (input.value.length === 5)) && ((input.value.substr(0, 2) > 12) || ((currYear > input.value.substr(3, 2)) || ((currYear === input.value.substr(3, 2)) && ((currMonth >= input.value.substr(0, 2))))))) {
     input.classList.add("error");
     label.innerHTML = '<i class="fas fa-exclamation-circle px-1 text-danger"></i> Expiry Date';
     document.getElementById('ccExpiryTooltip').setAttribute('title', 'Invalid date. Format: MM/YY Example: 04/25');
